@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "683192985048",
+    "firebase_url": "https://fahmuidrug-f93d6.firebaseio.com",
+    "project_id": "fahmuidrug-f93d6",
+    "storage_bucket": "fahmuidrug-f93d6.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:683192985048:android:430837d4f64adf9a47bead",
+        "android_client_info": {
+          "package_name": "com.fahmuidrug"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "683192985048-6q2i6cbeab9ki0nm4b4565khkqcqskjb.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.fahmuidrug",
+            "certificate_hash": "330dae724174cb021ab520d99cabacc91d04df52"
+          }
+        },
+        {
+          "client_id": "683192985048-fh036d5mosfa84d7fs2kpqpd7c5mi3eh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB6C0syrKDNhsirXBvB1HUsV19IyrgxuIE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "683192985048-fh036d5mosfa84d7fs2kpqpd7c5mi3eh.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
