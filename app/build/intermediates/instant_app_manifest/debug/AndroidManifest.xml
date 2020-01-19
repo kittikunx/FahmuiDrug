@@ -9,10 +9,14 @@
         android:minSdkVersion="19"
         android:targetSdkVersion="29" />
 
-    <!-- Although the *SdkVersion is captured in gradle build files, this is required for non gradle builds -->
-    <!-- <uses-sdk android:minSdkVersion="14"/> -->
-    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" /> <!-- Required by older versions of Google Play services to create IID tokens -->
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" />
 
     <application
         android:allowBackup="true"
@@ -22,7 +26,6 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:testOnly="true"
         android:theme="@style/AppTheme" >
         <activity android:name="com.fahmuidrug.LoginActivity" >
             <intent-filter>
@@ -31,16 +34,71 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name="com.fahmuidrug.AddReminderActivity"
+            android:label="@string/title_activity_add_reminder" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ReminderActivity" />
+        </activity>
+        <activity android:name="com.fahmuidrug.SkipActivity" />
+        <activity android:name="com.fahmuidrug.ReminderActivity" />
+        <activity android:name="com.fahmuidrug.RegisterActivity" />
+        <activity android:name="com.fahmuidrug.ProfileActivity" />
         <activity android:name="com.fahmuidrug.LabTestActivity" />
         <activity android:name="com.fahmuidrug.DrugActivity" />
         <activity android:name="com.fahmuidrug.MenuActivity" />
-        <activity android:name="com.fahmuidrug.view.DrugView" />
+        <activity android:name="com.fahmuidrug.view.DrugView" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="drive.google.com"
+                    android:pathPattern="/recipe"
+                    android:scheme="https" />
+            </intent-filter>
+        </activity>
         <activity android:name="com.fahmuidrug.HospitalActivity" />
         <activity android:name="com.fahmuidrug.DeveloperActivity" />
-        <activity android:name="com.fahmuidrug.KnowledgeActivity" />
+        <activity android:name="com.fahmuidrug.KnowledgeActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="oryor.com"
+                    android:pathPrefix="/recipe"
+                    android:scheme="https" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="oryor.com"
+                    android:pathPattern="/recipe"
+                    android:scheme="https" />
+            </intent-filter>
+        </activity>
         <activity android:name="com.fahmuidrug.QuestionActivity" />
         <activity android:name="com.fahmuidrug.VideoActivity" />
+        <activity android:name="com.fahmuidrug.TakeMedicineActivity" />
 
+        <provider
+            android:name="com.fahmuidrug.data.AlarmReminderProvider"
+            android:authorities="com.fahmuidrug"
+            android:exported="false" />
+
+        <service
+            android:name="com.fahmuidrug.reminder.ReminderAlarmService"
+            android:exported="false" />
         <service
             android:name="com.google.firebase.components.ComponentDiscoveryService"
             android:directBootAware="true"
@@ -54,6 +112,12 @@
             <meta-data
                 android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar"
                 android:value="com.google.firebase.components.ComponentRegistrar" />
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.iid.Registrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
         </service>
 
         <activity
@@ -63,6 +127,16 @@
             android:launchMode="singleTask"
             android:permission="com.google.firebase.auth.api.gms.permission.LAUNCH_FEDERATED_SIGN_IN"
             android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+        <receiver
+            android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
+            android:exported="true"
+            android:permission="com.google.android.c2dm.permission.SEND" >
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+            </intent-filter>
+        </receiver>
+
         <activity
             android:name="com.google.android.gms.common.api.GoogleApiActivity"
             android:exported="false"
@@ -73,6 +147,31 @@
             android:authorities="com.fahmuidrug.firebaseinitprovider"
             android:exported="false"
             android:initOrder="100" />
+
+        <receiver
+            android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
+            android:enabled="true"
+            android:exported="false" >
+        </receiver>
+        <receiver
+            android:name="com.google.android.gms.measurement.AppMeasurementInstallReferrerReceiver"
+            android:enabled="true"
+            android:exported="true"
+            android:permission="android.permission.INSTALL_PACKAGES" >
+            <intent-filter>
+                <action android:name="com.android.vending.INSTALL_REFERRER" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name="com.google.android.gms.measurement.AppMeasurementService"
+            android:enabled="true"
+            android:exported="false" />
+        <service
+            android:name="com.google.android.gms.measurement.AppMeasurementJobService"
+            android:enabled="true"
+            android:exported="false"
+            android:permission="android.permission.BIND_JOB_SERVICE" />
 
         <meta-data
             android:name="com.google.android.gms.version"

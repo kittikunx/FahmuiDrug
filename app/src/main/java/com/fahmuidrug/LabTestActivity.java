@@ -110,7 +110,6 @@ public class LabTestActivity extends AppCompatActivity {
                                         myReff.child("cd4").push().setValue(data);
                                         Toast.makeText(getApplicationContext(),"เสร็จสิ้น" , Toast.LENGTH_SHORT).show();
                                         setSpinner();
-//                                        finish();
                                     }
                                     else
                                     {
@@ -127,7 +126,6 @@ public class LabTestActivity extends AppCompatActivity {
                                         myReff.child("viral").push().setValue(data);
                                         Toast.makeText(getApplicationContext(),"เสร็จสิ้น" , Toast.LENGTH_SHORT).show();
                                         setSpinner();
-//                                        finish();
                                     }
                                     else
                                     {

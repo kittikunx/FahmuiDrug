@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:background="@drawable/back">
+
+<RelativeLayout
+    android:id="@+id/Topbar"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:ignore="MissingConstraints">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@color/green"
+        android:text="รายการยา"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:paddingTop="5dp" />
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="false"
+        android:layout_marginStart="4dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginTop="2dp"
+        android:background="@drawable/arrow" />
+</RelativeLayout>
+
+<LinearLayout
+    android:id="@+id/Downbar"
+    android:layout_below="@+id/midbar"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:ignore="MissingConstraints">
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="15dp"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="10dp">
+
+        <Button
+            android:id="@+id/adddrug"
+            android:layout_width="150dp"
+            android:layout_height="60dp"
+            android:text="เพิ่มรายการ"
+            android:textSize="20sp"
+            android:background="@color/yellow"
+            android:textColor="@color/Black"
+            android:textStyle="bold"/>
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>
+
+<LinearLayout
+    android:id="@+id/midbar"
+    android:layout_below="@+id/Topbar"
+    android:layout_width="match_parent"
+    android:layout_height="550dp"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardlab1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="12dp"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="8dp"
+        tools:ignore="MissingConstraints">
+
+        <ListView
+            android:id="@+id/ListViewRRR"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/testLAB"
+            android:longClickable="true"
+            android:layout_margin="5dp"
+            android:background="@color/white"/>
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>
+
+</RelativeLayout>

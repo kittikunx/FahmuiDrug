@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SkipActivity"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ท่านยังไม่ได้รับประทานยา"
+        android:textSize="26sp"
+        android:layout_marginTop="250dp"
+        android:gravity="center_horizontal"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="อย่าลืมรับประทานยานะคะ"
+        android:textSize="26sp"
+
+        android:gravity="center_horizontal"/>
+
+    <Button
+        android:id="@+id/backmain"
+        android:layout_width="wrap_content"
+        android:layout_height="90dp"
+        android:layout_margin="40dp"
+        android:layout_gravity="center"
+        android:textSize="22sp"
+        android:text="กดที่นี่เพื่อกลับเข้าสู่หน้าหลัก" />
+
+
+</LinearLayout>

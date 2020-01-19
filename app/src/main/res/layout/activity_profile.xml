@@ -1,0 +1,484 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <RelativeLayout
+        android:id="@+id/bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/back"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:background="@color/green"
+            android:paddingTop="5dp"
+            android:text="ข้อมูลผู้ใช้"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="28sp"
+            android:textStyle="bold" />
+
+        <ImageButton
+            android:id="@+id/imageButton"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="false"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="2dp"
+            android:background="@drawable/arrow" />
+
+        <ScrollView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60dp"
+            tools:ignore="MissingConstraints">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="12dp"
+                app:cardBackgroundColor="@color/cardview_light_background"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="8dp"
+                tools:layout_editor_absoluteX="48dp"
+                tools:layout_editor_absoluteY="0dp"
+                tools:ignore="MissingConstraints">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/textA0"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:drawablePadding="10dp"
+                        android:padding="15dp"
+                        android:text="ชื่อ : "
+                        android:textColor="@color/Black"
+                        android:textColorHighlight="@color/Black"
+                        android:textColorHint="@color/Black"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:background="@color/lightgray"
+                        android:id="@+id/textB0"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@+id/textA0"
+                        android:layout_marginTop="10dp"
+                        android:drawablePadding="10dp"
+                        android:layout_marginRight="10dp"
+                        android:padding="15dp"
+                        android:text=""
+                        android:textColor="@color/Black"
+                        android:textColorHighlight="@color/Black"
+                        android:textColorHint="@color/Black"
+                        android:textSize="18sp"
+                        android:layout_toEndOf="@+id/textA0"
+                        android:layout_marginEnd="10dp" />
+
+                    <TextView
+                        android:id="@+id/textA1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_below="@+id/textA0"
+                        android:drawablePadding="10dp"
+                        android:padding="15dp"
+                        android:text="นามสกุล : "
+                        android:textColor="@color/Black"
+                        android:textColorHighlight="@color/Black"
+                        android:textColorHint="@color/Black"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:background="@color/lightgray"
+                        android:id="@+id/textB1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@+id/textA1"
+                        android:layout_below="@+id/textB0"
+                        android:layout_marginTop="10dp"
+                        android:drawablePadding="10dp"
+                        android:layout_marginRight="10dp"
+                        android:padding="15dp"
+                        android:text=""
+                        android:textColor="@color/Black"
+                        android:textColorHighlight="@color/Black"
+                        android:textColorHint="@color/Black"
+                        android:textSize="18sp"
+                        android:layout_toEndOf="@+id/textA1"
+                        android:layout_marginEnd="10dp" />
+
+                    <TextView
+                        android:id="@+id/textA2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:drawablePadding="10dp"
+                        android:layout_below="@+id/textA1"
+                        android:padding="15dp"
+                        android:text="HN : "
+                        android:textColor="@color/Black"
+                        android:textColorHighlight="@color/Black"
+                        android:textColorHint="@color/Black"
+                        android:textSize="18sp" />
+                    <TextView
+                        android:background="@color/lightgray"
+                        android:id="@+id/textB2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toEndOf="@+id/textA2"
+                        android:layout_below="@+id/textB1"
+                        android:layout_marginTop="10dp"
+                        android:drawablePadding="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:padding="15dp"
+                        android:text=""
+                        android:textColor="@color/Black"
+                        android:textColorHighlight="@color/Black"
+                        android:textColorHint="@color/Black"
+                        android:textSize="18sp" />
+
+
+                    <TextView
+                        android:id="@+id/textA3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/textA2"
+                        android:drawablePadding="10dp"
+                        android:layout_marginTop="10dp"
+                        android:padding="15dp"
+                        android:text="วันเกิด : "
+                        android:textColor="@color/Black"
+                        android:textColorHighlight="@color/Black"
+                        android:textColorHint="@color/Black"
+                        android:textSize="18sp" />
+                    <TextView
+                        android:background="@color/lightgray"
+                        android:id="@+id/textB3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toEndOf="@+id/textA3"
+                        android:layout_below="@+id/textB2"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginTop="10dp"
+                        android:drawablePadding="10dp"
+                        android:padding="15dp"
+                        android:text=""
+                        android:textColor="@color/Black"
+                        android:textColorHighlight="@color/Black"
+                        android:textColorHint="@color/Black"
+                        android:textSize="18sp" />
+
+
+                    <TextView
+                        android:id="@+id/textA4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_below="@+id/textB3"
+                        android:drawablePadding="10dp"
+                        android:padding="15dp"
+                        android:text="น้ำหนัก : "
+                        android:textColor="@color/Black"
+                        android:textColorHighlight="@color/Black"
+                        android:textColorHint="@color/Black"
+                        android:textSize="18sp" />
+                    <TextView
+                        android:background="@color/lightgray"
+                        android:id="@+id/textB4"
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:layout_toEndOf="@+id/textA4"
+                        android:layout_below="@+id/textB3"
+                        android:drawablePadding="10dp"
+                        android:layout_marginTop="10dp"
+                        android:padding="15dp"
+                        android:text=""
+                        android:textColor="@color/Black"
+                        android:textColorHighlight="@color/Black"
+                        android:textColorHint="@color/Black"
+                        android:textSize="18sp" />
+                    <TextView
+                        android:id="@+id/textC4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_below="@+id/textB3"
+                        android:layout_toEndOf="@+id/textB4"
+                        android:drawablePadding="10dp"
+                        android:padding="15dp"
+                        android:text="กก."
+                        android:textColor="@color/Black"
+                        android:textColorHighlight="@color/Black"
+                        android:textColorHint="@color/Black"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/textA5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/textB4"
+                        android:drawablePadding="10dp"
+                        android:padding="15dp"
+                        android:text="ส่วนสูง : "
+                        android:textColor="@color/Black"
+                        android:textColorHighlight="@color/Black"
+                        android:textColorHint="@color/Black"
+                        android:textSize="18sp" />
+                    <TextView
+                        android:background="@color/lightgray"
+                        android:id="@+id/textB5"
+                        android:layout_width="140dp"
+                        android:layout_height="wrap_content"
+                        android:layout_toEndOf="@+id/textA5"
+                        android:layout_below="@+id/textB4"
+                        android:layout_marginTop="10dp"
+                        android:drawablePadding="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:padding="15dp"
+                        android:text=""
+                        android:textColor="@color/Black"
+                        android:textColorHighlight="@color/Black"
+                        android:textColorHint="@color/Black"
+                        android:textSize="18sp" />
+                    <TextView
+                        android:id="@+id/textC5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_below="@+id/textB4"
+                        android:layout_toEndOf="@+id/textB5"
+                        android:drawablePadding="10dp"
+                        android:padding="15dp"
+                        android:text="ซม."
+                        android:textColor="@color/Black"
+                        android:textColorHighlight="@color/Black"
+                        android:textColorHint="@color/Black"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/textA6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/textB5"
+                        android:layout_marginTop="10dp"
+                        android:drawablePadding="10dp"
+                        android:padding="15dp"
+                        android:text="หมู่เลือด : "
+                        android:textColor="@color/Black"
+                        android:textColorHighlight="@color/Black"
+                        android:textColorHint="@color/Black"
+                        android:textSize="18sp" />
+                    <TextView
+                        android:background="@color/lightgray"
+                        android:id="@+id/textB6"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toEndOf="@+id/textA6"
+                        android:layout_below="@+id/textB5"
+                        android:layout_marginTop="10dp"
+                        android:drawablePadding="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:padding="15dp"
+                        android:text=""
+                        android:textColor="@color/Black"
+                        android:textColorHighlight="@color/Black"
+                        android:textColorHint="@color/Black"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/textA7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/textB6"
+                        android:layout_marginTop="10dp"
+                        android:drawablePadding="10dp"
+                        android:padding="15dp"
+                        android:text="โรคประจำตัว : "
+                        android:textColor="@color/Black"
+                        android:textColorHighlight="@color/Black"
+                        android:textColorHint="@color/Black"
+                        android:textSize="18sp" />
+                    <TextView
+                        android:background="@color/lightgray"
+                        android:id="@+id/textB7"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toEndOf="@+id/textA7"
+                        android:layout_below="@+id/textB6"
+                        android:layout_marginTop="10dp"
+                        android:drawablePadding="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:padding="15dp"
+                        android:text=""
+                        android:textColor="@color/Black"
+                        android:textColorHighlight="@color/Black"
+                        android:textColorHint="@color/Black"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/textA8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/textB7"
+                        android:layout_marginTop="10dp"
+                        android:drawablePadding="10dp"
+                        android:padding="15dp"
+                        android:text="แพ้ยา : "
+                        android:textColor="@color/Black"
+                        android:textColorHighlight="@color/Black"
+                        android:textColorHint="@color/Black"
+                        android:textSize="18sp" />
+                    <TextView
+                        android:background="@color/lightgray"
+                        android:id="@+id/textB8"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toEndOf="@+id/textA8"
+                        android:layout_below="@+id/textB7"
+                        android:layout_marginTop="10dp"
+                        android:drawablePadding="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:padding="15dp"
+                        android:text=""
+                        android:textColor="@color/Black"
+                        android:textColorHighlight="@color/Black"
+                        android:textColorHint="@color/Black"
+                        android:textSize="18sp" />
+
+
+                    <TextView
+                        android:id="@+id/textA9"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/textB8"
+                        android:layout_marginTop="10dp"
+                        android:drawablePadding="10dp"
+                        android:padding="15dp"
+                        android:text="เบอร์โทรศัพท์ : "
+                        android:textColor="@color/Black"
+                        android:textColorHighlight="@color/Black"
+                        android:textColorHint="@color/Black"
+                        android:textSize="18sp" />
+                    <TextView
+                        android:background="@color/lightgray"
+                        android:id="@+id/textB9"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toEndOf="@+id/textA9"
+                        android:layout_below="@+id/textB8"
+                        android:layout_marginTop="10dp"
+                        android:drawablePadding="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:padding="15dp"
+                        android:text=""
+                        android:textColor="@color/Black"
+                        android:textColorHighlight="@color/Black"
+                        android:textColorHint="@color/Black"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/textA10"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/textB9"
+                        android:layout_marginTop="10dp"
+                        android:drawablePadding="10dp"
+                        android:padding="15dp"
+                        android:text="ยีนดื้อยา : "
+                        android:textColor="@color/Black"
+                        android:textColorHighlight="@color/Black"
+                        android:textColorHint="@color/Black"
+                        android:textSize="18sp" />
+                    <TextView
+                        android:background="@color/lightgray"
+                        android:id="@+id/textB10"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toEndOf="@+id/textA10"
+                        android:layout_below="@+id/textB9"
+                        android:layout_marginTop="10dp"
+                        android:drawablePadding="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:padding="15dp"
+                        android:text=""
+                        android:textColor="@color/Black"
+                        android:textColorHighlight="@color/Black"
+                        android:textColorHint="@color/Black"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/textA11"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/textB10"
+                        android:layout_marginTop="10dp"
+                        android:drawablePadding="10dp"
+                        android:padding="15dp"
+                        android:text="ยีนแพ้ยา : "
+                        android:textColor="@color/Black"
+                        android:textColorHighlight="@color/Black"
+                        android:textColorHint="@color/Black"
+                        android:textSize="18sp" />
+                    <TextView
+                        android:background="@color/lightgray"
+                        android:id="@+id/textB11"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toEndOf="@+id/textA11"
+                        android:layout_below="@+id/textB10"
+                        android:layout_marginTop="10dp"
+                        android:drawablePadding="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:padding="15dp"
+                        android:text=""
+                        android:textColor="@color/Black"
+                        android:textColorHighlight="@color/Black"
+                        android:textColorHint="@color/Black"
+                        android:textSize="18sp" />
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:cardCornerRadius="10dp"
+                        android:layout_marginBottom="20dp"
+                        android:layout_marginTop="20dp"
+                        app:cardElevation="10dp"
+                        android:layout_below="@+id/textA11"
+                        android:layout_centerHorizontal="true">
+
+                        <Button
+                            android:id="@+id/editdata"
+                            android:layout_width="160dp"
+                            android:layout_height="70dp"
+                            android:text="แก้ไขข้อมูล"
+                            android:textSize="22sp"
+                            android:textColor="@color/Black"
+                            android:textStyle="bold"
+                            android:background="@color/yellow"/>
+
+                    </androidx.cardview.widget.CardView>
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </ScrollView>
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

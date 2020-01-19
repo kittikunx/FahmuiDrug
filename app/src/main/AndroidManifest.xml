@@ -2,6 +2,11 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.fahmuidrug">
 
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -9,7 +14,6 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-
         <activity android:name=".LoginActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -17,15 +21,70 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".AddReminderActivity"
+            android:label="@string/title_activity_add_reminder">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ReminderActivity" />
+        </activity>
+        <activity android:name=".SkipActivity" />
+        <activity android:name=".ReminderActivity" />
+        <activity android:name=".RegisterActivity" />
+        <activity android:name=".ProfileActivity" />
         <activity android:name=".LabTestActivity" />
         <activity android:name=".DrugActivity" />
         <activity android:name=".MenuActivity" />
-        <activity android:name=".view.DrugView" />
+        <activity android:name=".view.DrugView">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:scheme="https"
+                    android:host="drive.google.com"
+                    android:pathPattern="/recipe" />
+            </intent-filter>
+        </activity>
         <activity android:name=".HospitalActivity" />
         <activity android:name=".DeveloperActivity" />
-        <activity android:name=".KnowledgeActivity" />
+        <activity android:name=".KnowledgeActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:scheme="https"
+                    android:host="oryor.com"
+                    android:pathPrefix="/recipe" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:scheme="https"
+                    android:host="oryor.com"
+                    android:pathPattern="/recipe" />
+            </intent-filter>
+        </activity>
         <activity android:name=".QuestionActivity" />
         <activity android:name=".VideoActivity" />
+        <activity android:name=".TakeMedicineActivity" />
+        <provider
+            android:name=".data.AlarmReminderProvider"
+            android:authorities="com.fahmuidrug"
+            android:exported="false" />
+
+        <service
+            android:name=".reminder.ReminderAlarmService"
+            android:exported="false" />
     </application>
 
 </manifest>

@@ -1,8 +1,37 @@
 <resources>
     <string name="app_name">โอสถ</string>
+    <string name="no_cardetails">กดที่ปุ่มเพื่อเพิ่มการแจ้งเตือน</string>
+    <string name="title_activity_add_reminder">เพิ่มการแจ้งเตือน</string>
+    <string name="title_activity_edit_reminder">แก้ไขการแจ้งเตือน</string>
+    <string name="title_activity_licenses">Licenses</string>
+    <string name="add_reminder">ชื่อการแจ้งเตือน</string>
+    <string name="details">รายละเอียดต่างๆ</string>
+    <string name="date">วันที่</string>
+    <string name="time">เวลา</string>
+    <string name="repeat">การแจ้งเตือนซ้ำ</string>
+    <string name="repeat_off">ปิด</string>
+    <string name="repeat_no">แจ้งเตือนทุก</string>
+    <string name="repeat_type">ประเภทการแจ้งเตือนซ้ำ</string>
     <string-array name="lab_selected">
         <item>กรุณาเลือกผลตรวจที่ท่านต้องการ</item>
         <item>CD4</item>
         <item>Viral Load</item>
     </string-array>
+    <string name="action_discard_reminder">ละทิ้งการแจ้งเตือน</string>
+    <string name="action_save_reminder">บันทึกการแจ้งเตือน</string>
+    <string name="editor_activity_title_new_reminder">ระบุรายละเอียดเกี่ยวกับการแจ้งเตือน</string>
+    <string name="editor_activity_title_edit_reminder">แก้ไขการแจ้งเตือน</string>
+    <string name="unsaved_changes_dialog_msg">ละทิ้งการเปลี่ยนแปลง และออกจากการแก้ไข?</string>
+    <string name="discard">ละทิ้ง</string>
+    <string name="keep_editing">เก็บไว้</string>
+    <string name="delete_dialog_msg">ลบการแจ้งเตือนนี้?</string>
+    <string name="delete">ลบ</string>
+    <string name="cancel">ยกเลิก</string>
+    <string name="editor_delete_reminder_successful">ลบการเตือนเรียบร้อยแล้ว</string>
+    <string name="editor_delete_reminder_failed">Error with deleting reminder</string>
+    <string name="editor_insert_reminder_successful">บันทึกการเตือนเรียบร้อยแล้ว</string>
+    <string name="editor_insert_reminder_failed">Error with saving reminder</string>
+    <string name="editor_update_reminder_successful">อัพเดตการแจ้งเตือนเรียบร้อยแล้ว</string>
+    <string name="editor_update_reminder_failed">Error with updating reminder</string>
+    <string name="reminder_title">วันนัดคุณหมอ</string>
 </resources>

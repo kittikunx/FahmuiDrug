@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.cardview.widget.CardView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_margin="12dp"
+    app:cardBackgroundColor="@color/cardview_light_background"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="8dp"
+    tools:ignore="MissingConstraints">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <EditText
+            android:background="@color/lightgray"
+            android:id="@+id/input_name"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="5dp"
+            android:textAlignment="center"
+            android:hint="ชื่อ"
+            android:inputType="text"
+            android:textColor="@color/Black"
+            android:textColorHint="@color/gray"
+            android:textColorHighlight="@color/gray"/>
+
+        <EditText
+            android:background="@color/lightgray"
+            android:id="@+id/input_lastName"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="5dp"
+            android:textAlignment="center"
+            android:hint="นามสกุล"
+            android:inputType="text"
+            android:textColor="@color/Black"
+            android:textColorHint="@color/gray"
+            android:textColorHighlight="@color/gray"/>
+
+        <EditText
+            android:background="@color/lightgray"
+            android:id="@+id/input_hn"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="5dp"
+            android:textAlignment="center"
+            android:hint="HN"
+            android:inputType="numberDecimal"
+            android:textColor="@color/Black"
+            android:textColorHint="@color/gray"
+            android:textColorHighlight="@color/gray"/>
+
+        <EditText
+            android:background="@color/lightgray"
+            android:id="@+id/input_bd"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="5dp"
+            android:textAlignment="center"
+            android:hint="วัน/เดือน/ปีเกิด (01/01/2563)"
+            android:inputType="date"
+            android:textColor="@color/Black"
+            android:textColorHint="@color/gray"
+            android:textColorHighlight="@color/gray"/>
+
+        <EditText
+            android:background="@color/lightgray"
+            android:id="@+id/input_weight"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="5dp"
+            android:textAlignment="center"
+            android:hint="น้ำหนัก"
+            android:inputType="numberDecimal"
+            android:textColor="@color/Black"
+            android:textColorHint="@color/gray"
+            android:textColorHighlight="@color/gray"/>
+
+        <EditText
+            android:background="@color/lightgray"
+            android:id="@+id/input_high"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="5dp"
+            android:textAlignment="center"
+            android:hint="ส่วนสูง"
+            android:inputType="numberDecimal"
+            android:textColor="@color/Black"
+            android:textColorHint="@color/gray"
+            android:textColorHighlight="@color/gray"/>
+
+        <EditText
+            android:background="@color/lightgray"
+            android:id="@+id/input_bloodGroup"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="5dp"
+            android:textAlignment="center"
+            android:hint="หมู่เลือด (เอ, บี, โอ, เอบี)"
+            android:inputType="text"
+            android:textColor="@color/Black"
+            android:textColorHint="@color/gray"
+            android:textColorHighlight="@color/gray"/>
+
+        <EditText
+            android:background="@color/lightgray"
+            android:id="@+id/input_congential"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="5dp"
+            android:textAlignment="center"
+            android:hint="โรคประจำตัว"
+            android:inputType="text"
+            android:textColor="@color/Black"
+            android:textColorHint="@color/gray"
+            android:textColorHighlight="@color/gray"/>
+
+        <EditText
+            android:background="@color/lightgray"
+            android:id="@+id/input_allergic"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="5dp"
+            android:textAlignment="center"
+            android:hint="แพ้ยาและอาการ"
+            android:inputType="text"
+            android:textColor="@color/Black"
+            android:textColorHint="@color/gray"
+            android:textColorHighlight="@color/gray"/>
+
+        <EditText
+            android:background="@color/lightgray"
+            android:id="@+id/input_phone"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="5dp"
+            android:textAlignment="center"
+            android:hint="เบอร์โทรศัพท์"
+            android:inputType="phone"
+            android:textColor="@color/Black"
+            android:textColorHint="@color/gray"
+            android:textColorHighlight="@color/gray"/>
+
+        <EditText
+            android:background="@color/lightgray"
+            android:id="@+id/input_geneResist"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="5dp"
+            android:textAlignment="center"
+            android:hint="ยีนดื้อยา"
+            android:inputType="text"
+            android:textColor="@color/Black"
+            android:textColorHint="@color/gray"
+            android:textColorHighlight="@color/gray"/>
+
+        <EditText
+            android:background="@color/lightgray"
+            android:id="@+id/input_geneAllergy"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="5dp"
+            android:textAlignment="center"
+            android:hint="ยีนแพ้ยา"
+            android:inputType="text"
+            android:textColor="@color/Black"
+            android:textColorHint="@color/gray"
+            android:textColorHighlight="@color/gray"/>
+
+
+    </LinearLayout>
+
+
+
+</androidx.cardview.widget.CardView>
+
+

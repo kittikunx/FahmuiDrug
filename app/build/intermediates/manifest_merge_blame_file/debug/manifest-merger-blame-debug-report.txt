@@ -10,143 +10,344 @@
 9        android:targetSdkVersion="29" />
 9-->D:\Work\FahmuiDrug\app\src\main\AndroidManifest.xml
 10
-11    <!-- Although the *SdkVersion is captured in gradle build files, this is required for non gradle builds -->
-12    <!-- <uses-sdk android:minSdkVersion="14"/> -->
-13    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-13-->[com.google.firebase:firebase-database:19.2.0] C:\Users\fordz\.gradle\caches\transforms-2\files-2.1\2abc8f45ee061cdc0370add6163cedcd\jetified-firebase-database-19.2.0\AndroidManifest.xml:25:5-79
-13-->[com.google.firebase:firebase-database:19.2.0] C:\Users\fordz\.gradle\caches\transforms-2\files-2.1\2abc8f45ee061cdc0370add6163cedcd\jetified-firebase-database-19.2.0\AndroidManifest.xml:25:22-76
-14    <uses-permission android:name="android.permission.INTERNET" />
-14-->[com.google.firebase:firebase-database:19.2.0] C:\Users\fordz\.gradle\caches\transforms-2\files-2.1\2abc8f45ee061cdc0370add6163cedcd\jetified-firebase-database-19.2.0\AndroidManifest.xml:26:5-67
-14-->[com.google.firebase:firebase-database:19.2.0] C:\Users\fordz\.gradle\caches\transforms-2\files-2.1\2abc8f45ee061cdc0370add6163cedcd\jetified-firebase-database-19.2.0\AndroidManifest.xml:26:22-64
-15
-16    <application
-16-->D:\Work\FahmuiDrug\app\src\main\AndroidManifest.xml:5:5-29:19
-17        android:allowBackup="true"
-17-->D:\Work\FahmuiDrug\app\src\main\AndroidManifest.xml:6:9-35
-18        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-18-->[androidx.core:core:1.1.0] C:\Users\fordz\.gradle\caches\transforms-2\files-2.1\76a7a61636e939a851a8efde69c5b690\core-1.1.0\AndroidManifest.xml:24:18-86
-19        android:debuggable="true"
-20        android:icon="@mipmap/ic_launcher"
-20-->D:\Work\FahmuiDrug\app\src\main\AndroidManifest.xml:7:9-43
-21        android:label="@string/app_name"
-21-->D:\Work\FahmuiDrug\app\src\main\AndroidManifest.xml:8:9-41
-22        android:roundIcon="@mipmap/ic_launcher_round"
-22-->D:\Work\FahmuiDrug\app\src\main\AndroidManifest.xml:9:9-54
-23        android:supportsRtl="true"
-23-->D:\Work\FahmuiDrug\app\src\main\AndroidManifest.xml:10:9-35
-24        android:testOnly="true"
-25        android:theme="@style/AppTheme" >
-25-->D:\Work\FahmuiDrug\app\src\main\AndroidManifest.xml:11:9-40
-26        <activity android:name="com.fahmuidrug.LoginActivity" >
-26-->D:\Work\FahmuiDrug\app\src\main\AndroidManifest.xml:13:9-19:20
-26-->D:\Work\FahmuiDrug\app\src\main\AndroidManifest.xml:13:19-48
-27            <intent-filter>
-27-->D:\Work\FahmuiDrug\app\src\main\AndroidManifest.xml:14:13-18:29
-28                <action android:name="android.intent.action.MAIN" />
-28-->D:\Work\FahmuiDrug\app\src\main\AndroidManifest.xml:15:17-69
-28-->D:\Work\FahmuiDrug\app\src\main\AndroidManifest.xml:15:25-66
-29
-30                <category android:name="android.intent.category.LAUNCHER" />
-30-->D:\Work\FahmuiDrug\app\src\main\AndroidManifest.xml:17:17-77
-30-->D:\Work\FahmuiDrug\app\src\main\AndroidManifest.xml:17:27-74
-31            </intent-filter>
-32        </activity>
-33        <activity android:name="com.fahmuidrug.LabTestActivity" />
-33-->D:\Work\FahmuiDrug\app\src\main\AndroidManifest.xml:20:9-53
-33-->D:\Work\FahmuiDrug\app\src\main\AndroidManifest.xml:20:19-50
-34        <activity android:name="com.fahmuidrug.DrugActivity" />
-34-->D:\Work\FahmuiDrug\app\src\main\AndroidManifest.xml:21:9-50
-34-->D:\Work\FahmuiDrug\app\src\main\AndroidManifest.xml:21:19-47
-35        <activity android:name="com.fahmuidrug.MenuActivity" />
-35-->D:\Work\FahmuiDrug\app\src\main\AndroidManifest.xml:22:9-50
-35-->D:\Work\FahmuiDrug\app\src\main\AndroidManifest.xml:22:19-47
-36        <activity android:name="com.fahmuidrug.view.DrugView" />
-36-->D:\Work\FahmuiDrug\app\src\main\AndroidManifest.xml:23:9-51
-36-->D:\Work\FahmuiDrug\app\src\main\AndroidManifest.xml:23:19-48
-37        <activity android:name="com.fahmuidrug.HospitalActivity" />
-37-->D:\Work\FahmuiDrug\app\src\main\AndroidManifest.xml:24:9-54
-37-->D:\Work\FahmuiDrug\app\src\main\AndroidManifest.xml:24:19-51
-38        <activity android:name="com.fahmuidrug.DeveloperActivity" />
-38-->D:\Work\FahmuiDrug\app\src\main\AndroidManifest.xml:25:9-55
-38-->D:\Work\FahmuiDrug\app\src\main\AndroidManifest.xml:25:19-52
-39        <activity android:name="com.fahmuidrug.KnowledgeActivity" />
-39-->D:\Work\FahmuiDrug\app\src\main\AndroidManifest.xml:26:9-55
-39-->D:\Work\FahmuiDrug\app\src\main\AndroidManifest.xml:26:19-52
-40        <activity android:name="com.fahmuidrug.QuestionActivity" />
-40-->D:\Work\FahmuiDrug\app\src\main\AndroidManifest.xml:27:9-54
-40-->D:\Work\FahmuiDrug\app\src\main\AndroidManifest.xml:27:19-51
-41        <activity android:name="com.fahmuidrug.VideoActivity" />
-41-->D:\Work\FahmuiDrug\app\src\main\AndroidManifest.xml:28:9-51
-41-->D:\Work\FahmuiDrug\app\src\main\AndroidManifest.xml:28:19-48
-42
-43        <service
-43-->[com.google.firebase:firebase-database:19.2.0] C:\Users\fordz\.gradle\caches\transforms-2\files-2.1\2abc8f45ee061cdc0370add6163cedcd\jetified-firebase-database-19.2.0\AndroidManifest.xml:29:9-35:19
-44            android:name="com.google.firebase.components.ComponentDiscoveryService"
-44-->[com.google.firebase:firebase-database:19.2.0] C:\Users\fordz\.gradle\caches\transforms-2\files-2.1\2abc8f45ee061cdc0370add6163cedcd\jetified-firebase-database-19.2.0\AndroidManifest.xml:30:13-84
-45            android:directBootAware="true"
-45-->[com.google.firebase:firebase-common:19.3.0] C:\Users\fordz\.gradle\caches\transforms-2\files-2.1\dd8bf58b4aa9fa9f8791bb3a63713f45\jetified-firebase-common-19.3.0\AndroidManifest.xml:34:13-43
-46            android:exported="false" >
-46-->[com.google.firebase:firebase-database:19.2.0] C:\Users\fordz\.gradle\caches\transforms-2\files-2.1\2abc8f45ee061cdc0370add6163cedcd\jetified-firebase-database-19.2.0\AndroidManifest.xml:31:13-37
-47            <meta-data
-47-->[com.google.firebase:firebase-database:19.2.0] C:\Users\fordz\.gradle\caches\transforms-2\files-2.1\2abc8f45ee061cdc0370add6163cedcd\jetified-firebase-database-19.2.0\AndroidManifest.xml:32:13-34:85
-48                android:name="com.google.firebase.components:com.google.firebase.database.DatabaseRegistrar"
-48-->[com.google.firebase:firebase-database:19.2.0] C:\Users\fordz\.gradle\caches\transforms-2\files-2.1\2abc8f45ee061cdc0370add6163cedcd\jetified-firebase-database-19.2.0\AndroidManifest.xml:33:17-109
-49                android:value="com.google.firebase.components.ComponentRegistrar" />
-49-->[com.google.firebase:firebase-database:19.2.0] C:\Users\fordz\.gradle\caches\transforms-2\files-2.1\2abc8f45ee061cdc0370add6163cedcd\jetified-firebase-database-19.2.0\AndroidManifest.xml:34:17-82
-50            <meta-data
-50-->[com.google.firebase:firebase-storage:19.1.0] C:\Users\fordz\.gradle\caches\transforms-2\files-2.1\6c3dfdcff734b118047c5b4a83a2c8b0\jetified-firebase-storage-19.1.0\AndroidManifest.xml:33:13-35:85
-51                android:name="com.google.firebase.components:com.google.firebase.storage.StorageRegistrar"
-51-->[com.google.firebase:firebase-storage:19.1.0] C:\Users\fordz\.gradle\caches\transforms-2\files-2.1\6c3dfdcff734b118047c5b4a83a2c8b0\jetified-firebase-storage-19.1.0\AndroidManifest.xml:34:17-107
-52                android:value="com.google.firebase.components.ComponentRegistrar" />
-52-->[com.google.firebase:firebase-storage:19.1.0] C:\Users\fordz\.gradle\caches\transforms-2\files-2.1\6c3dfdcff734b118047c5b4a83a2c8b0\jetified-firebase-storage-19.1.0\AndroidManifest.xml:35:17-82
-53            <meta-data
-53-->[com.google.firebase:firebase-auth:19.2.0] C:\Users\fordz\.gradle\caches\transforms-2\files-2.1\b47be3bf99d99b400afb7ffa99a2a21a\jetified-firebase-auth-19.2.0\AndroidManifest.xml:36:13-38:85
-54                android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar"
-54-->[com.google.firebase:firebase-auth:19.2.0] C:\Users\fordz\.gradle\caches\transforms-2\files-2.1\b47be3bf99d99b400afb7ffa99a2a21a\jetified-firebase-auth-19.2.0\AndroidManifest.xml:37:17-109
-55                android:value="com.google.firebase.components.ComponentRegistrar" />
-55-->[com.google.firebase:firebase-auth:19.2.0] C:\Users\fordz\.gradle\caches\transforms-2\files-2.1\b47be3bf99d99b400afb7ffa99a2a21a\jetified-firebase-auth-19.2.0\AndroidManifest.xml:38:17-82
-56        </service>
-57
-58        <activity
-58-->[com.google.firebase:firebase-auth:19.2.0] C:\Users\fordz\.gradle\caches\transforms-2\files-2.1\b47be3bf99d99b400afb7ffa99a2a21a\jetified-firebase-auth-19.2.0\AndroidManifest.xml:24:9-31:50
-59            android:name="com.google.firebase.auth.internal.FederatedSignInActivity"
-59-->[com.google.firebase:firebase-auth:19.2.0] C:\Users\fordz\.gradle\caches\transforms-2\files-2.1\b47be3bf99d99b400afb7ffa99a2a21a\jetified-firebase-auth-19.2.0\AndroidManifest.xml:25:13-85
-60            android:excludeFromRecents="true"
-60-->[com.google.firebase:firebase-auth:19.2.0] C:\Users\fordz\.gradle\caches\transforms-2\files-2.1\b47be3bf99d99b400afb7ffa99a2a21a\jetified-firebase-auth-19.2.0\AndroidManifest.xml:26:13-46
-61            android:exported="true"
-61-->[com.google.firebase:firebase-auth:19.2.0] C:\Users\fordz\.gradle\caches\transforms-2\files-2.1\b47be3bf99d99b400afb7ffa99a2a21a\jetified-firebase-auth-19.2.0\AndroidManifest.xml:27:13-36
-62            android:launchMode="singleTask"
-62-->[com.google.firebase:firebase-auth:19.2.0] C:\Users\fordz\.gradle\caches\transforms-2\files-2.1\b47be3bf99d99b400afb7ffa99a2a21a\jetified-firebase-auth-19.2.0\AndroidManifest.xml:28:13-44
-63            android:permission="com.google.firebase.auth.api.gms.permission.LAUNCH_FEDERATED_SIGN_IN"
-63-->[com.google.firebase:firebase-auth:19.2.0] C:\Users\fordz\.gradle\caches\transforms-2\files-2.1\b47be3bf99d99b400afb7ffa99a2a21a\jetified-firebase-auth-19.2.0\AndroidManifest.xml:29:13-102
-64            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-64-->[com.google.firebase:firebase-auth:19.2.0] C:\Users\fordz\.gradle\caches\transforms-2\files-2.1\b47be3bf99d99b400afb7ffa99a2a21a\jetified-firebase-auth-19.2.0\AndroidManifest.xml:30:13-72
-65        <activity
-65-->[com.google.android.gms:play-services-base:17.1.0] C:\Users\fordz\.gradle\caches\transforms-2\files-2.1\7d0cc0b4b30b85ca5a02e04e449a6474\jetified-play-services-base-17.1.0\AndroidManifest.xml:23:9-26:75
-66            android:name="com.google.android.gms.common.api.GoogleApiActivity"
-66-->[com.google.android.gms:play-services-base:17.1.0] C:\Users\fordz\.gradle\caches\transforms-2\files-2.1\7d0cc0b4b30b85ca5a02e04e449a6474\jetified-play-services-base-17.1.0\AndroidManifest.xml:24:13-79
-67            android:exported="false"
-67-->[com.google.android.gms:play-services-base:17.1.0] C:\Users\fordz\.gradle\caches\transforms-2\files-2.1\7d0cc0b4b30b85ca5a02e04e449a6474\jetified-play-services-base-17.1.0\AndroidManifest.xml:25:13-37
-68            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-68-->[com.google.android.gms:play-services-base:17.1.0] C:\Users\fordz\.gradle\caches\transforms-2\files-2.1\7d0cc0b4b30b85ca5a02e04e449a6474\jetified-play-services-base-17.1.0\AndroidManifest.xml:26:13-72
-69
-70        <provider
-70-->[com.google.firebase:firebase-common:19.3.0] C:\Users\fordz\.gradle\caches\transforms-2\files-2.1\dd8bf58b4aa9fa9f8791bb3a63713f45\jetified-firebase-common-19.3.0\AndroidManifest.xml:26:9-30:39
-71            android:name="com.google.firebase.provider.FirebaseInitProvider"
-71-->[com.google.firebase:firebase-common:19.3.0] C:\Users\fordz\.gradle\caches\transforms-2\files-2.1\dd8bf58b4aa9fa9f8791bb3a63713f45\jetified-firebase-common-19.3.0\AndroidManifest.xml:27:13-77
-72            android:authorities="com.fahmuidrug.firebaseinitprovider"
-72-->[com.google.firebase:firebase-common:19.3.0] C:\Users\fordz\.gradle\caches\transforms-2\files-2.1\dd8bf58b4aa9fa9f8791bb3a63713f45\jetified-firebase-common-19.3.0\AndroidManifest.xml:28:13-72
-73            android:exported="false"
-73-->[com.google.firebase:firebase-common:19.3.0] C:\Users\fordz\.gradle\caches\transforms-2\files-2.1\dd8bf58b4aa9fa9f8791bb3a63713f45\jetified-firebase-common-19.3.0\AndroidManifest.xml:29:13-37
-74            android:initOrder="100" />
-74-->[com.google.firebase:firebase-common:19.3.0] C:\Users\fordz\.gradle\caches\transforms-2\files-2.1\dd8bf58b4aa9fa9f8791bb3a63713f45\jetified-firebase-common-19.3.0\AndroidManifest.xml:30:13-36
-75
-76        <meta-data
-76-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\fordz\.gradle\caches\transforms-2\files-2.1\48f847052a8977da700d2b5b410151f1\jetified-play-services-basement-17.0.0\AndroidManifest.xml:23:9-25:69
-77            android:name="com.google.android.gms.version"
-77-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\fordz\.gradle\caches\transforms-2\files-2.1\48f847052a8977da700d2b5b410151f1\jetified-play-services-basement-17.0.0\AndroidManifest.xml:24:13-58
-78            android:value="@integer/google_play_services_version" />
-78-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\fordz\.gradle\caches\transforms-2\files-2.1\48f847052a8977da700d2b5b410151f1\jetified-play-services-basement-17.0.0\AndroidManifest.xml:25:13-66
-79    </application>
-80
-81</manifest>
+11    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+11-->D:\Work\FahmuiDrug\app\src\main\AndroidManifest.xml:5:5-81
+11-->D:\Work\FahmuiDrug\app\src\main\AndroidManifest.xml:5:22-78
+12    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+12-->D:\Work\FahmuiDrug\app\src\main\AndroidManifest.xml:6:5-80
+12-->D:\Work\FahmuiDrug\app\src\main\AndroidManifest.xml:6:22-77
+13    <uses-permission android:name="android.permission.INTERNET" />
+13-->D:\Work\FahmuiDrug\app\src\main\AndroidManifest.xml:7:5-67
+13-->D:\Work\FahmuiDrug\app\src\main\AndroidManifest.xml:7:22-64
+14    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+14-->D:\Work\FahmuiDrug\app\src\main\AndroidManifest.xml:8:5-79
+14-->D:\Work\FahmuiDrug\app\src\main\AndroidManifest.xml:8:22-76
+15    <uses-permission android:name="android.permission.VIBRATE" />
+15-->[com.wdullaer:materialdatetimepicker:3.2.0] C:\Users\fordz\.gradle\caches\transforms-2\files-2.1\dcb77779e39868cb925515ec355ea067\jetified-materialdatetimepicker-3.2.0\AndroidManifest.xml:26:5-66
+15-->[com.wdullaer:materialdatetimepicker:3.2.0] C:\Users\fordz\.gradle\caches\transforms-2\files-2.1\dcb77779e39868cb925515ec355ea067\jetified-materialdatetimepicker-3.2.0\AndroidManifest.xml:26:22-63
+16    <uses-permission android:name="android.permission.WAKE_LOCK" /> <!-- Required by older versions of Google Play services to create IID tokens -->
+16-->[com.google.android.gms:play-services-measurement-api:17.2.1] C:\Users\fordz\.gradle\caches\transforms-2\files-2.1\3fc1c64ca82a45e10048c8f8fd31ed5d\jetified-play-services-measurement-api-17.2.1\AndroidManifest.xml:24:5-68
+16-->[com.google.android.gms:play-services-measurement-api:17.2.1] C:\Users\fordz\.gradle\caches\transforms-2\files-2.1\3fc1c64ca82a45e10048c8f8fd31ed5d\jetified-play-services-measurement-api-17.2.1\AndroidManifest.xml:24:22-65
+17    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+17-->[com.google.firebase:firebase-iid:19.0.0] C:\Users\fordz\.gradle\caches\transforms-2\files-2.1\b8ce91a7fc2547a4e9c8b5c4f1b905ef\jetified-firebase-iid-19.0.0\AndroidManifest.xml:26:5-82
+17-->[com.google.firebase:firebase-iid:19.0.0] C:\Users\fordz\.gradle\caches\transforms-2\files-2.1\b8ce91a7fc2547a4e9c8b5c4f1b905ef\jetified-firebase-iid-19.0.0\AndroidManifest.xml:26:22-79
+18    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" />
+18-->[com.google.android.gms:play-services-measurement:17.2.1] C:\Users\fordz\.gradle\caches\transforms-2\files-2.1\6de30182b7f64c418733e4c0fa7c2471\jetified-play-services-measurement-17.2.1\AndroidManifest.xml:26:5-110
+18-->[com.google.android.gms:play-services-measurement:17.2.1] C:\Users\fordz\.gradle\caches\transforms-2\files-2.1\6de30182b7f64c418733e4c0fa7c2471\jetified-play-services-measurement-17.2.1\AndroidManifest.xml:26:22-107
+19
+20    <application
+20-->D:\Work\FahmuiDrug\app\src\main\AndroidManifest.xml:10:5-88:19
+21        android:allowBackup="true"
+21-->D:\Work\FahmuiDrug\app\src\main\AndroidManifest.xml:11:9-35
+22        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+22-->[androidx.core:core:1.1.0] C:\Users\fordz\.gradle\caches\transforms-2\files-2.1\76a7a61636e939a851a8efde69c5b690\core-1.1.0\AndroidManifest.xml:24:18-86
+23        android:debuggable="true"
+24        android:icon="@mipmap/ic_launcher"
+24-->D:\Work\FahmuiDrug\app\src\main\AndroidManifest.xml:12:9-43
+25        android:label="@string/app_name"
+25-->D:\Work\FahmuiDrug\app\src\main\AndroidManifest.xml:13:9-41
+26        android:roundIcon="@mipmap/ic_launcher_round"
+26-->D:\Work\FahmuiDrug\app\src\main\AndroidManifest.xml:14:9-54
+27        android:supportsRtl="true"
+27-->D:\Work\FahmuiDrug\app\src\main\AndroidManifest.xml:15:9-35
+28        android:theme="@style/AppTheme" >
+28-->D:\Work\FahmuiDrug\app\src\main\AndroidManifest.xml:16:9-40
+29        <activity android:name="com.fahmuidrug.LoginActivity" >
+29-->D:\Work\FahmuiDrug\app\src\main\AndroidManifest.xml:17:9-23:20
+29-->D:\Work\FahmuiDrug\app\src\main\AndroidManifest.xml:17:19-48
+30            <intent-filter>
+30-->D:\Work\FahmuiDrug\app\src\main\AndroidManifest.xml:18:13-22:29
+31                <action android:name="android.intent.action.MAIN" />
+31-->D:\Work\FahmuiDrug\app\src\main\AndroidManifest.xml:19:17-69
+31-->D:\Work\FahmuiDrug\app\src\main\AndroidManifest.xml:19:25-66
+32
+33                <category android:name="android.intent.category.LAUNCHER" />
+33-->D:\Work\FahmuiDrug\app\src\main\AndroidManifest.xml:21:17-77
+33-->D:\Work\FahmuiDrug\app\src\main\AndroidManifest.xml:21:27-74
+34            </intent-filter>
+35        </activity>
+36        <activity
+36-->D:\Work\FahmuiDrug\app\src\main\AndroidManifest.xml:24:9-30:20
+37            android:name="com.fahmuidrug.AddReminderActivity"
+37-->D:\Work\FahmuiDrug\app\src\main\AndroidManifest.xml:25:13-48
+38            android:label="@string/title_activity_add_reminder" >
+38-->D:\Work\FahmuiDrug\app\src\main\AndroidManifest.xml:26:13-64
+39            <meta-data
+39-->D:\Work\FahmuiDrug\app\src\main\AndroidManifest.xml:27:13-29:53
+40                android:name="android.support.PARENT_ACTIVITY"
+40-->D:\Work\FahmuiDrug\app\src\main\AndroidManifest.xml:28:17-63
+41                android:value=".ReminderActivity" />
+41-->D:\Work\FahmuiDrug\app\src\main\AndroidManifest.xml:29:17-50
+42        </activity>
+43        <activity android:name="com.fahmuidrug.SkipActivity" />
+43-->D:\Work\FahmuiDrug\app\src\main\AndroidManifest.xml:31:9-50
+43-->D:\Work\FahmuiDrug\app\src\main\AndroidManifest.xml:31:19-47
+44        <activity android:name="com.fahmuidrug.ReminderActivity" />
+44-->D:\Work\FahmuiDrug\app\src\main\AndroidManifest.xml:32:9-54
+44-->D:\Work\FahmuiDrug\app\src\main\AndroidManifest.xml:32:19-51
+45        <activity android:name="com.fahmuidrug.RegisterActivity" />
+45-->D:\Work\FahmuiDrug\app\src\main\AndroidManifest.xml:33:9-54
+45-->D:\Work\FahmuiDrug\app\src\main\AndroidManifest.xml:33:19-51
+46        <activity android:name="com.fahmuidrug.ProfileActivity" />
+46-->D:\Work\FahmuiDrug\app\src\main\AndroidManifest.xml:34:9-53
+46-->D:\Work\FahmuiDrug\app\src\main\AndroidManifest.xml:34:19-50
+47        <activity android:name="com.fahmuidrug.LabTestActivity" />
+47-->D:\Work\FahmuiDrug\app\src\main\AndroidManifest.xml:35:9-53
+47-->D:\Work\FahmuiDrug\app\src\main\AndroidManifest.xml:35:19-50
+48        <activity android:name="com.fahmuidrug.DrugActivity" />
+48-->D:\Work\FahmuiDrug\app\src\main\AndroidManifest.xml:36:9-50
+48-->D:\Work\FahmuiDrug\app\src\main\AndroidManifest.xml:36:19-47
+49        <activity android:name="com.fahmuidrug.MenuActivity" />
+49-->D:\Work\FahmuiDrug\app\src\main\AndroidManifest.xml:37:9-50
+49-->D:\Work\FahmuiDrug\app\src\main\AndroidManifest.xml:37:19-47
+50        <activity android:name="com.fahmuidrug.view.DrugView" >
+50-->D:\Work\FahmuiDrug\app\src\main\AndroidManifest.xml:38:9-50:20
+50-->D:\Work\FahmuiDrug\app\src\main\AndroidManifest.xml:38:19-48
+51            <intent-filter>
+51-->D:\Work\FahmuiDrug\app\src\main\AndroidManifest.xml:39:13-49:29
+52                <action android:name="android.intent.action.VIEW" />
+52-->D:\Work\FahmuiDrug\app\src\main\AndroidManifest.xml:40:17-69
+52-->D:\Work\FahmuiDrug\app\src\main\AndroidManifest.xml:40:25-66
+53
+54                <category android:name="android.intent.category.DEFAULT" />
+54-->D:\Work\FahmuiDrug\app\src\main\AndroidManifest.xml:42:17-76
+54-->D:\Work\FahmuiDrug\app\src\main\AndroidManifest.xml:42:27-73
+55                <category android:name="android.intent.category.BROWSABLE" />
+55-->D:\Work\FahmuiDrug\app\src\main\AndroidManifest.xml:43:17-78
+55-->D:\Work\FahmuiDrug\app\src\main\AndroidManifest.xml:43:27-75
+56
+57                <data
+57-->D:\Work\FahmuiDrug\app\src\main\AndroidManifest.xml:45:17-48:53
+58                    android:host="drive.google.com"
+58-->D:\Work\FahmuiDrug\app\src\main\AndroidManifest.xml:47:21-52
+59                    android:pathPattern="/recipe"
+59-->D:\Work\FahmuiDrug\app\src\main\AndroidManifest.xml:48:21-50
+60                    android:scheme="https" />
+60-->D:\Work\FahmuiDrug\app\src\main\AndroidManifest.xml:46:21-43
+61            </intent-filter>
+62        </activity>
+63        <activity android:name="com.fahmuidrug.HospitalActivity" />
+63-->D:\Work\FahmuiDrug\app\src\main\AndroidManifest.xml:51:9-54
+63-->D:\Work\FahmuiDrug\app\src\main\AndroidManifest.xml:51:19-51
+64        <activity android:name="com.fahmuidrug.DeveloperActivity" />
+64-->D:\Work\FahmuiDrug\app\src\main\AndroidManifest.xml:52:9-55
+64-->D:\Work\FahmuiDrug\app\src\main\AndroidManifest.xml:52:19-52
+65        <activity android:name="com.fahmuidrug.KnowledgeActivity" >
+65-->D:\Work\FahmuiDrug\app\src\main\AndroidManifest.xml:53:9-76:20
+65-->D:\Work\FahmuiDrug\app\src\main\AndroidManifest.xml:53:19-52
+66            <intent-filter>
+66-->D:\Work\FahmuiDrug\app\src\main\AndroidManifest.xml:54:13-64:29
+67                <action android:name="android.intent.action.VIEW" />
+67-->D:\Work\FahmuiDrug\app\src\main\AndroidManifest.xml:40:17-69
+67-->D:\Work\FahmuiDrug\app\src\main\AndroidManifest.xml:40:25-66
+68
+69                <category android:name="android.intent.category.DEFAULT" />
+69-->D:\Work\FahmuiDrug\app\src\main\AndroidManifest.xml:42:17-76
+69-->D:\Work\FahmuiDrug\app\src\main\AndroidManifest.xml:42:27-73
+70                <category android:name="android.intent.category.BROWSABLE" />
+70-->D:\Work\FahmuiDrug\app\src\main\AndroidManifest.xml:43:17-78
+70-->D:\Work\FahmuiDrug\app\src\main\AndroidManifest.xml:43:27-75
+71
+72                <data
+72-->D:\Work\FahmuiDrug\app\src\main\AndroidManifest.xml:45:17-48:53
+73                    android:host="oryor.com"
+73-->D:\Work\FahmuiDrug\app\src\main\AndroidManifest.xml:47:21-52
+74                    android:pathPrefix="/recipe"
+74-->D:\Work\FahmuiDrug\app\src\main\AndroidManifest.xml:63:21-49
+75                    android:scheme="https" />
+75-->D:\Work\FahmuiDrug\app\src\main\AndroidManifest.xml:46:21-43
+76            </intent-filter>
+77            <intent-filter>
+77-->D:\Work\FahmuiDrug\app\src\main\AndroidManifest.xml:65:13-75:29
+78                <action android:name="android.intent.action.VIEW" />
+78-->D:\Work\FahmuiDrug\app\src\main\AndroidManifest.xml:40:17-69
+78-->D:\Work\FahmuiDrug\app\src\main\AndroidManifest.xml:40:25-66
+79
+80                <category android:name="android.intent.category.DEFAULT" />
+80-->D:\Work\FahmuiDrug\app\src\main\AndroidManifest.xml:42:17-76
+80-->D:\Work\FahmuiDrug\app\src\main\AndroidManifest.xml:42:27-73
+81                <category android:name="android.intent.category.BROWSABLE" />
+81-->D:\Work\FahmuiDrug\app\src\main\AndroidManifest.xml:43:17-78
+81-->D:\Work\FahmuiDrug\app\src\main\AndroidManifest.xml:43:27-75
+82
+83                <data
+83-->D:\Work\FahmuiDrug\app\src\main\AndroidManifest.xml:45:17-48:53
+84                    android:host="oryor.com"
+84-->D:\Work\FahmuiDrug\app\src\main\AndroidManifest.xml:47:21-52
+85                    android:pathPattern="/recipe"
+85-->D:\Work\FahmuiDrug\app\src\main\AndroidManifest.xml:48:21-50
+86                    android:scheme="https" />
+86-->D:\Work\FahmuiDrug\app\src\main\AndroidManifest.xml:46:21-43
+87            </intent-filter>
+88        </activity>
+89        <activity android:name="com.fahmuidrug.QuestionActivity" />
+89-->D:\Work\FahmuiDrug\app\src\main\AndroidManifest.xml:77:9-54
+89-->D:\Work\FahmuiDrug\app\src\main\AndroidManifest.xml:77:19-51
+90        <activity android:name="com.fahmuidrug.VideoActivity" />
+90-->D:\Work\FahmuiDrug\app\src\main\AndroidManifest.xml:78:9-51
+90-->D:\Work\FahmuiDrug\app\src\main\AndroidManifest.xml:78:19-48
+91        <activity android:name="com.fahmuidrug.TakeMedicineActivity" />
+91-->D:\Work\FahmuiDrug\app\src\main\AndroidManifest.xml:79:9-58
+91-->D:\Work\FahmuiDrug\app\src\main\AndroidManifest.xml:79:19-55
+92
+93        <provider
+93-->D:\Work\FahmuiDrug\app\src\main\AndroidManifest.xml:80:9-83:40
+94            android:name="com.fahmuidrug.data.AlarmReminderProvider"
+94-->D:\Work\FahmuiDrug\app\src\main\AndroidManifest.xml:81:13-55
+95            android:authorities="com.fahmuidrug"
+95-->D:\Work\FahmuiDrug\app\src\main\AndroidManifest.xml:82:13-49
+96            android:exported="false" />
+96-->D:\Work\FahmuiDrug\app\src\main\AndroidManifest.xml:83:13-37
+97
+98        <service
+98-->D:\Work\FahmuiDrug\app\src\main\AndroidManifest.xml:85:9-87:40
+99            android:name="com.fahmuidrug.reminder.ReminderAlarmService"
+99-->D:\Work\FahmuiDrug\app\src\main\AndroidManifest.xml:86:13-58
+100            android:exported="false" />
+100-->D:\Work\FahmuiDrug\app\src\main\AndroidManifest.xml:87:13-37
+101        <service
+101-->[com.google.firebase:firebase-database:19.2.0] C:\Users\fordz\.gradle\caches\transforms-2\files-2.1\2abc8f45ee061cdc0370add6163cedcd\jetified-firebase-database-19.2.0\AndroidManifest.xml:29:9-35:19
+102            android:name="com.google.firebase.components.ComponentDiscoveryService"
+102-->[com.google.firebase:firebase-database:19.2.0] C:\Users\fordz\.gradle\caches\transforms-2\files-2.1\2abc8f45ee061cdc0370add6163cedcd\jetified-firebase-database-19.2.0\AndroidManifest.xml:30:13-84
+103            android:directBootAware="true"
+103-->[com.google.firebase:firebase-common:19.3.0] C:\Users\fordz\.gradle\caches\transforms-2\files-2.1\dd8bf58b4aa9fa9f8791bb3a63713f45\jetified-firebase-common-19.3.0\AndroidManifest.xml:34:13-43
+104            android:exported="false" >
+104-->[com.google.firebase:firebase-database:19.2.0] C:\Users\fordz\.gradle\caches\transforms-2\files-2.1\2abc8f45ee061cdc0370add6163cedcd\jetified-firebase-database-19.2.0\AndroidManifest.xml:31:13-37
+105            <meta-data
+105-->[com.google.firebase:firebase-database:19.2.0] C:\Users\fordz\.gradle\caches\transforms-2\files-2.1\2abc8f45ee061cdc0370add6163cedcd\jetified-firebase-database-19.2.0\AndroidManifest.xml:32:13-34:85
+106                android:name="com.google.firebase.components:com.google.firebase.database.DatabaseRegistrar"
+106-->[com.google.firebase:firebase-database:19.2.0] C:\Users\fordz\.gradle\caches\transforms-2\files-2.1\2abc8f45ee061cdc0370add6163cedcd\jetified-firebase-database-19.2.0\AndroidManifest.xml:33:17-109
+107                android:value="com.google.firebase.components.ComponentRegistrar" />
+107-->[com.google.firebase:firebase-database:19.2.0] C:\Users\fordz\.gradle\caches\transforms-2\files-2.1\2abc8f45ee061cdc0370add6163cedcd\jetified-firebase-database-19.2.0\AndroidManifest.xml:34:17-82
+108            <meta-data
+108-->[com.google.firebase:firebase-storage:19.1.0] C:\Users\fordz\.gradle\caches\transforms-2\files-2.1\6c3dfdcff734b118047c5b4a83a2c8b0\jetified-firebase-storage-19.1.0\AndroidManifest.xml:33:13-35:85
+109                android:name="com.google.firebase.components:com.google.firebase.storage.StorageRegistrar"
+109-->[com.google.firebase:firebase-storage:19.1.0] C:\Users\fordz\.gradle\caches\transforms-2\files-2.1\6c3dfdcff734b118047c5b4a83a2c8b0\jetified-firebase-storage-19.1.0\AndroidManifest.xml:34:17-107
+110                android:value="com.google.firebase.components.ComponentRegistrar" />
+110-->[com.google.firebase:firebase-storage:19.1.0] C:\Users\fordz\.gradle\caches\transforms-2\files-2.1\6c3dfdcff734b118047c5b4a83a2c8b0\jetified-firebase-storage-19.1.0\AndroidManifest.xml:35:17-82
+111            <meta-data
+111-->[com.google.firebase:firebase-auth:19.2.0] C:\Users\fordz\.gradle\caches\transforms-2\files-2.1\b47be3bf99d99b400afb7ffa99a2a21a\jetified-firebase-auth-19.2.0\AndroidManifest.xml:36:13-38:85
+112                android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar"
+112-->[com.google.firebase:firebase-auth:19.2.0] C:\Users\fordz\.gradle\caches\transforms-2\files-2.1\b47be3bf99d99b400afb7ffa99a2a21a\jetified-firebase-auth-19.2.0\AndroidManifest.xml:37:17-109
+113                android:value="com.google.firebase.components.ComponentRegistrar" />
+113-->[com.google.firebase:firebase-auth:19.2.0] C:\Users\fordz\.gradle\caches\transforms-2\files-2.1\b47be3bf99d99b400afb7ffa99a2a21a\jetified-firebase-auth-19.2.0\AndroidManifest.xml:38:17-82
+114            <meta-data
+114-->[com.google.android.gms:play-services-measurement-api:17.2.1] C:\Users\fordz\.gradle\caches\transforms-2\files-2.1\3fc1c64ca82a45e10048c8f8fd31ed5d\jetified-play-services-measurement-api-17.2.1\AndroidManifest.xml:30:13-32:85
+115                android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar"
+115-->[com.google.android.gms:play-services-measurement-api:17.2.1] C:\Users\fordz\.gradle\caches\transforms-2\files-2.1\3fc1c64ca82a45e10048c8f8fd31ed5d\jetified-play-services-measurement-api-17.2.1\AndroidManifest.xml:31:17-139
+116                android:value="com.google.firebase.components.ComponentRegistrar" />
+116-->[com.google.android.gms:play-services-measurement-api:17.2.1] C:\Users\fordz\.gradle\caches\transforms-2\files-2.1\3fc1c64ca82a45e10048c8f8fd31ed5d\jetified-play-services-measurement-api-17.2.1\AndroidManifest.xml:32:17-82
+117            <meta-data
+117-->[com.google.firebase:firebase-iid:19.0.0] C:\Users\fordz\.gradle\caches\transforms-2\files-2.1\b8ce91a7fc2547a4e9c8b5c4f1b905ef\jetified-firebase-iid-19.0.0\AndroidManifest.xml:32:13-34:85
+118                android:name="com.google.firebase.components:com.google.firebase.iid.Registrar"
+118-->[com.google.firebase:firebase-iid:19.0.0] C:\Users\fordz\.gradle\caches\transforms-2\files-2.1\b8ce91a7fc2547a4e9c8b5c4f1b905ef\jetified-firebase-iid-19.0.0\AndroidManifest.xml:33:17-96
+119                android:value="com.google.firebase.components.ComponentRegistrar" />
+119-->[com.google.firebase:firebase-iid:19.0.0] C:\Users\fordz\.gradle\caches\transforms-2\files-2.1\b8ce91a7fc2547a4e9c8b5c4f1b905ef\jetified-firebase-iid-19.0.0\AndroidManifest.xml:34:17-82
+120        </service>
+121
+122        <activity
+122-->[com.google.firebase:firebase-auth:19.2.0] C:\Users\fordz\.gradle\caches\transforms-2\files-2.1\b47be3bf99d99b400afb7ffa99a2a21a\jetified-firebase-auth-19.2.0\AndroidManifest.xml:24:9-31:50
+123            android:name="com.google.firebase.auth.internal.FederatedSignInActivity"
+123-->[com.google.firebase:firebase-auth:19.2.0] C:\Users\fordz\.gradle\caches\transforms-2\files-2.1\b47be3bf99d99b400afb7ffa99a2a21a\jetified-firebase-auth-19.2.0\AndroidManifest.xml:25:13-85
+124            android:excludeFromRecents="true"
+124-->[com.google.firebase:firebase-auth:19.2.0] C:\Users\fordz\.gradle\caches\transforms-2\files-2.1\b47be3bf99d99b400afb7ffa99a2a21a\jetified-firebase-auth-19.2.0\AndroidManifest.xml:26:13-46
+125            android:exported="true"
+125-->[com.google.firebase:firebase-auth:19.2.0] C:\Users\fordz\.gradle\caches\transforms-2\files-2.1\b47be3bf99d99b400afb7ffa99a2a21a\jetified-firebase-auth-19.2.0\AndroidManifest.xml:27:13-36
+126            android:launchMode="singleTask"
+126-->[com.google.firebase:firebase-auth:19.2.0] C:\Users\fordz\.gradle\caches\transforms-2\files-2.1\b47be3bf99d99b400afb7ffa99a2a21a\jetified-firebase-auth-19.2.0\AndroidManifest.xml:28:13-44
+127            android:permission="com.google.firebase.auth.api.gms.permission.LAUNCH_FEDERATED_SIGN_IN"
+127-->[com.google.firebase:firebase-auth:19.2.0] C:\Users\fordz\.gradle\caches\transforms-2\files-2.1\b47be3bf99d99b400afb7ffa99a2a21a\jetified-firebase-auth-19.2.0\AndroidManifest.xml:29:13-102
+128            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+128-->[com.google.firebase:firebase-auth:19.2.0] C:\Users\fordz\.gradle\caches\transforms-2\files-2.1\b47be3bf99d99b400afb7ffa99a2a21a\jetified-firebase-auth-19.2.0\AndroidManifest.xml:30:13-72
+129
+130        <receiver
+130-->[com.google.firebase:firebase-iid:19.0.0] C:\Users\fordz\.gradle\caches\transforms-2\files-2.1\b8ce91a7fc2547a4e9c8b5c4f1b905ef\jetified-firebase-iid-19.0.0\AndroidManifest.xml:37:9-44:20
+131            android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
+131-->[com.google.firebase:firebase-iid:19.0.0] C:\Users\fordz\.gradle\caches\transforms-2\files-2.1\b8ce91a7fc2547a4e9c8b5c4f1b905ef\jetified-firebase-iid-19.0.0\AndroidManifest.xml:38:13-78
+132            android:exported="true"
+132-->[com.google.firebase:firebase-iid:19.0.0] C:\Users\fordz\.gradle\caches\transforms-2\files-2.1\b8ce91a7fc2547a4e9c8b5c4f1b905ef\jetified-firebase-iid-19.0.0\AndroidManifest.xml:39:13-36
+133            android:permission="com.google.android.c2dm.permission.SEND" >
+133-->[com.google.firebase:firebase-iid:19.0.0] C:\Users\fordz\.gradle\caches\transforms-2\files-2.1\b8ce91a7fc2547a4e9c8b5c4f1b905ef\jetified-firebase-iid-19.0.0\AndroidManifest.xml:40:13-73
+134            <intent-filter>
+134-->[com.google.firebase:firebase-iid:19.0.0] C:\Users\fordz\.gradle\caches\transforms-2\files-2.1\b8ce91a7fc2547a4e9c8b5c4f1b905ef\jetified-firebase-iid-19.0.0\AndroidManifest.xml:41:13-43:29
+135                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+135-->[com.google.firebase:firebase-iid:19.0.0] C:\Users\fordz\.gradle\caches\transforms-2\files-2.1\b8ce91a7fc2547a4e9c8b5c4f1b905ef\jetified-firebase-iid-19.0.0\AndroidManifest.xml:42:17-81
+135-->[com.google.firebase:firebase-iid:19.0.0] C:\Users\fordz\.gradle\caches\transforms-2\files-2.1\b8ce91a7fc2547a4e9c8b5c4f1b905ef\jetified-firebase-iid-19.0.0\AndroidManifest.xml:42:25-78
+136            </intent-filter>
+137        </receiver>
+138
+139        <activity
+139-->[com.google.android.gms:play-services-base:17.1.0] C:\Users\fordz\.gradle\caches\transforms-2\files-2.1\7d0cc0b4b30b85ca5a02e04e449a6474\jetified-play-services-base-17.1.0\AndroidManifest.xml:23:9-26:75
+140            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+140-->[com.google.android.gms:play-services-base:17.1.0] C:\Users\fordz\.gradle\caches\transforms-2\files-2.1\7d0cc0b4b30b85ca5a02e04e449a6474\jetified-play-services-base-17.1.0\AndroidManifest.xml:24:13-79
+141            android:exported="false"
+141-->[com.google.android.gms:play-services-base:17.1.0] C:\Users\fordz\.gradle\caches\transforms-2\files-2.1\7d0cc0b4b30b85ca5a02e04e449a6474\jetified-play-services-base-17.1.0\AndroidManifest.xml:25:13-37
+142            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+142-->[com.google.android.gms:play-services-base:17.1.0] C:\Users\fordz\.gradle\caches\transforms-2\files-2.1\7d0cc0b4b30b85ca5a02e04e449a6474\jetified-play-services-base-17.1.0\AndroidManifest.xml:26:13-72
+143
+144        <provider
+144-->[com.google.firebase:firebase-common:19.3.0] C:\Users\fordz\.gradle\caches\transforms-2\files-2.1\dd8bf58b4aa9fa9f8791bb3a63713f45\jetified-firebase-common-19.3.0\AndroidManifest.xml:26:9-30:39
+145            android:name="com.google.firebase.provider.FirebaseInitProvider"
+145-->[com.google.firebase:firebase-common:19.3.0] C:\Users\fordz\.gradle\caches\transforms-2\files-2.1\dd8bf58b4aa9fa9f8791bb3a63713f45\jetified-firebase-common-19.3.0\AndroidManifest.xml:27:13-77
+146            android:authorities="com.fahmuidrug.firebaseinitprovider"
+146-->[com.google.firebase:firebase-common:19.3.0] C:\Users\fordz\.gradle\caches\transforms-2\files-2.1\dd8bf58b4aa9fa9f8791bb3a63713f45\jetified-firebase-common-19.3.0\AndroidManifest.xml:28:13-72
+147            android:exported="false"
+147-->[com.google.firebase:firebase-common:19.3.0] C:\Users\fordz\.gradle\caches\transforms-2\files-2.1\dd8bf58b4aa9fa9f8791bb3a63713f45\jetified-firebase-common-19.3.0\AndroidManifest.xml:29:13-37
+148            android:initOrder="100" />
+148-->[com.google.firebase:firebase-common:19.3.0] C:\Users\fordz\.gradle\caches\transforms-2\files-2.1\dd8bf58b4aa9fa9f8791bb3a63713f45\jetified-firebase-common-19.3.0\AndroidManifest.xml:30:13-36
+149
+150        <receiver
+150-->[com.google.android.gms:play-services-measurement:17.2.1] C:\Users\fordz\.gradle\caches\transforms-2\files-2.1\6de30182b7f64c418733e4c0fa7c2471\jetified-play-services-measurement-17.2.1\AndroidManifest.xml:29:9-33:20
+151            android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
+151-->[com.google.android.gms:play-services-measurement:17.2.1] C:\Users\fordz\.gradle\caches\transforms-2\files-2.1\6de30182b7f64c418733e4c0fa7c2471\jetified-play-services-measurement-17.2.1\AndroidManifest.xml:30:13-85
+152            android:enabled="true"
+152-->[com.google.android.gms:play-services-measurement:17.2.1] C:\Users\fordz\.gradle\caches\transforms-2\files-2.1\6de30182b7f64c418733e4c0fa7c2471\jetified-play-services-measurement-17.2.1\AndroidManifest.xml:31:13-35
+153            android:exported="false" >
+153-->[com.google.android.gms:play-services-measurement:17.2.1] C:\Users\fordz\.gradle\caches\transforms-2\files-2.1\6de30182b7f64c418733e4c0fa7c2471\jetified-play-services-measurement-17.2.1\AndroidManifest.xml:32:13-37
+154        </receiver>
+155        <receiver
+155-->[com.google.android.gms:play-services-measurement:17.2.1] C:\Users\fordz\.gradle\caches\transforms-2\files-2.1\6de30182b7f64c418733e4c0fa7c2471\jetified-play-services-measurement-17.2.1\AndroidManifest.xml:34:9-42:20
+156            android:name="com.google.android.gms.measurement.AppMeasurementInstallReferrerReceiver"
+156-->[com.google.android.gms:play-services-measurement:17.2.1] C:\Users\fordz\.gradle\caches\transforms-2\files-2.1\6de30182b7f64c418733e4c0fa7c2471\jetified-play-services-measurement-17.2.1\AndroidManifest.xml:35:13-100
+157            android:enabled="true"
+157-->[com.google.android.gms:play-services-measurement:17.2.1] C:\Users\fordz\.gradle\caches\transforms-2\files-2.1\6de30182b7f64c418733e4c0fa7c2471\jetified-play-services-measurement-17.2.1\AndroidManifest.xml:36:13-35
+158            android:exported="true"
+158-->[com.google.android.gms:play-services-measurement:17.2.1] C:\Users\fordz\.gradle\caches\transforms-2\files-2.1\6de30182b7f64c418733e4c0fa7c2471\jetified-play-services-measurement-17.2.1\AndroidManifest.xml:37:13-36
+159            android:permission="android.permission.INSTALL_PACKAGES" >
+159-->[com.google.android.gms:play-services-measurement:17.2.1] C:\Users\fordz\.gradle\caches\transforms-2\files-2.1\6de30182b7f64c418733e4c0fa7c2471\jetified-play-services-measurement-17.2.1\AndroidManifest.xml:38:13-69
+160            <intent-filter>
+160-->[com.google.android.gms:play-services-measurement:17.2.1] C:\Users\fordz\.gradle\caches\transforms-2\files-2.1\6de30182b7f64c418733e4c0fa7c2471\jetified-play-services-measurement-17.2.1\AndroidManifest.xml:39:13-41:29
+161                <action android:name="com.android.vending.INSTALL_REFERRER" />
+161-->[com.google.android.gms:play-services-measurement:17.2.1] C:\Users\fordz\.gradle\caches\transforms-2\files-2.1\6de30182b7f64c418733e4c0fa7c2471\jetified-play-services-measurement-17.2.1\AndroidManifest.xml:40:17-79
+161-->[com.google.android.gms:play-services-measurement:17.2.1] C:\Users\fordz\.gradle\caches\transforms-2\files-2.1\6de30182b7f64c418733e4c0fa7c2471\jetified-play-services-measurement-17.2.1\AndroidManifest.xml:40:25-76
+162            </intent-filter>
+163        </receiver>
+164
+165        <service
+165-->[com.google.android.gms:play-services-measurement:17.2.1] C:\Users\fordz\.gradle\caches\transforms-2\files-2.1\6de30182b7f64c418733e4c0fa7c2471\jetified-play-services-measurement-17.2.1\AndroidManifest.xml:44:9-47:40
+166            android:name="com.google.android.gms.measurement.AppMeasurementService"
+166-->[com.google.android.gms:play-services-measurement:17.2.1] C:\Users\fordz\.gradle\caches\transforms-2\files-2.1\6de30182b7f64c418733e4c0fa7c2471\jetified-play-services-measurement-17.2.1\AndroidManifest.xml:45:13-84
+167            android:enabled="true"
+167-->[com.google.android.gms:play-services-measurement:17.2.1] C:\Users\fordz\.gradle\caches\transforms-2\files-2.1\6de30182b7f64c418733e4c0fa7c2471\jetified-play-services-measurement-17.2.1\AndroidManifest.xml:46:13-35
+168            android:exported="false" />
+168-->[com.google.android.gms:play-services-measurement:17.2.1] C:\Users\fordz\.gradle\caches\transforms-2\files-2.1\6de30182b7f64c418733e4c0fa7c2471\jetified-play-services-measurement-17.2.1\AndroidManifest.xml:47:13-37
+169        <service
+169-->[com.google.android.gms:play-services-measurement:17.2.1] C:\Users\fordz\.gradle\caches\transforms-2\files-2.1\6de30182b7f64c418733e4c0fa7c2471\jetified-play-services-measurement-17.2.1\AndroidManifest.xml:48:9-52:72
+170            android:name="com.google.android.gms.measurement.AppMeasurementJobService"
+170-->[com.google.android.gms:play-services-measurement:17.2.1] C:\Users\fordz\.gradle\caches\transforms-2\files-2.1\6de30182b7f64c418733e4c0fa7c2471\jetified-play-services-measurement-17.2.1\AndroidManifest.xml:49:13-87
+171            android:enabled="true"
+171-->[com.google.android.gms:play-services-measurement:17.2.1] C:\Users\fordz\.gradle\caches\transforms-2\files-2.1\6de30182b7f64c418733e4c0fa7c2471\jetified-play-services-measurement-17.2.1\AndroidManifest.xml:50:13-35
+172            android:exported="false"
+172-->[com.google.android.gms:play-services-measurement:17.2.1] C:\Users\fordz\.gradle\caches\transforms-2\files-2.1\6de30182b7f64c418733e4c0fa7c2471\jetified-play-services-measurement-17.2.1\AndroidManifest.xml:51:13-37
+173            android:permission="android.permission.BIND_JOB_SERVICE" />
+173-->[com.google.android.gms:play-services-measurement:17.2.1] C:\Users\fordz\.gradle\caches\transforms-2\files-2.1\6de30182b7f64c418733e4c0fa7c2471\jetified-play-services-measurement-17.2.1\AndroidManifest.xml:52:13-69
+174
+175        <meta-data
+175-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\fordz\.gradle\caches\transforms-2\files-2.1\48f847052a8977da700d2b5b410151f1\jetified-play-services-basement-17.0.0\AndroidManifest.xml:23:9-25:69
+176            android:name="com.google.android.gms.version"
+176-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\fordz\.gradle\caches\transforms-2\files-2.1\48f847052a8977da700d2b5b410151f1\jetified-play-services-basement-17.0.0\AndroidManifest.xml:24:13-58
+177            android:value="@integer/google_play_services_version" />
+177-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\fordz\.gradle\caches\transforms-2\files-2.1\48f847052a8977da700d2b5b410151f1\jetified-play-services-basement-17.0.0\AndroidManifest.xml:25:13-66
+178    </application>
+179
+180</manifest>

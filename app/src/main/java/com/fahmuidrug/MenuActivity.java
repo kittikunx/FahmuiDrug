@@ -69,19 +69,17 @@ public class MenuActivity extends AppCompatActivity {
         for (int i = 0; i < grid.getChildCount(); i++) {
             CardView cardView = (CardView) grid.getChildAt(i);
 
-//            if(i == 0)
-//            {
-//                cardView.setOnClickListener(new View.OnClickListener() {
-//                    @Override
-//                    public void onClick(View v) {
-//
-//
-//                        startActivity(new Intent(getApplicationContext(),Profile.class));
-//                        finish();
-//                    }
-//                });
-//            }
-//
+            if(i == 0)
+            {
+                cardView.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        startActivity(new Intent(getApplicationContext(),ProfileActivity.class));
+
+                    }
+                });
+            }
+
             if(i == 1)
             {
                 cardView.setOnClickListener(new View.OnClickListener() {
@@ -91,27 +89,29 @@ public class MenuActivity extends AppCompatActivity {
                     }
                 });
             }
-//
-//            if(i == 2)
-//            {
-//                cardView.setOnClickListener(new View.OnClickListener() {
-//                    @Override
-//                    public void onClick(View v) {
-//                        startActivity(new Intent(getApplicationContext(),MainActivity.class));
-//                    }
-//                });
-//            }
 
-//            if(i == 3)
-//            {
-//                cardView.setOnClickListener(new View.OnClickListener() {
-//                    @Override
-//                    public void onClick(View v) {
-//                        startActivity(new Intent(getApplicationContext(),CalendarActivity.class));
-//                    }
-//                });
-//            }
-//
+            if(i == 2)
+            {
+                cardView.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        showMessage("อยู่ในช่วงพัฒนา");
+                        startActivity(new Intent(getApplicationContext(),ReminderActivity.class));
+                    }
+                });
+            }
+
+            if(i == 3)
+            {
+                cardView.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        showMessage("อยู่ในช่วงพัฒนา");
+//                        startActivity(new Intent(getApplicationContext(),MainActivity.class));
+                    }
+                });
+            }
+
             if(i == 4)
             {
                 cardView.setOnClickListener(new View.OnClickListener() {
@@ -173,5 +173,9 @@ public class MenuActivity extends AppCompatActivity {
             }
 
         }
+    }
+
+    private void showMessage(String message) {
+        Toast.makeText(getApplicationContext(),message,Toast.LENGTH_LONG).show();
     }
 }

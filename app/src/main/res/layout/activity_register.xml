@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back"
+    tools:context=".RegisterActivity">
+
+    <RelativeLayout
+        android:id="@+id/topBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:background="@color/green"
+            android:text="สมัครสมาชิก"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:paddingTop="5dp" />
+
+        <ImageButton
+            android:id="@+id/imageButton"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="false"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="2dp"
+            android:background="@drawable/arrow"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/AB"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/topBar"
+        android:layout_marginTop="5dp">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="30dp"
+            android:background="@drawable/human" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageView"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="10dp"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/regName"
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:background="@color/lightgray"
+                android:ems="10"
+                android:hint="ชื่อ"
+                android:inputType="textPersonName"
+                android:paddingStart="10dp"
+                android:textColorHint="@color/gray"
+                android:textColorHighlight="@color/gray"
+                android:textColor="@color/Black"/>
+
+            <EditText
+                android:id="@+id/regLastName"
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:background="@color/lightgray"
+                android:ems="10"
+                android:hint="นามสกุล"
+                android:inputType="textPersonName"
+                android:paddingStart="10dp"
+                android:textColorHint="@color/gray"
+                android:textColorHighlight="@color/gray"
+                android:textColor="@color/Black"/>
+
+            <EditText
+                android:id="@+id/regEmail"
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:background="@color/lightgray"
+                android:ems="10"
+                android:hint="อีเมล"
+                android:inputType="textEmailAddress"
+                android:paddingStart="10dp"
+                android:textColorHint="@color/gray"
+                android:textColorHighlight="@color/gray"
+                android:textColor="@color/Black"/>
+
+            <EditText
+                android:id="@+id/regPassword"
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:background="@color/lightgray"
+                android:ems="10"
+                android:hint="รหัสผ่าน (อย่างน้อย 6 ตัวอักษร)"
+                android:inputType="textPassword"
+                android:paddingStart="10dp"
+                android:textColorHint="@color/gray"
+                android:textColorHighlight="@color/gray"
+                android:textColor="@color/Black" />
+
+            <EditText
+                android:id="@+id/regConfirmPass"
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:background="@color/lightgray"
+                android:ems="10"
+                android:hint="ยืนยันรหัสผ่าน"
+                android:inputType="textPassword"
+                android:paddingStart="10dp"
+                android:textColorHint="@color/gray"
+                android:textColorHighlight="@color/gray"
+                android:textColor="@color/Black"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <Button
+        android:layout_below="@+id/AB"
+        android:id="@+id/regButton"
+        android:layout_width="160dp"
+        android:layout_height="70dp"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:background="@drawable/btn_style_log"
+        android:backgroundTint="@color/yellow"
+        android:text="สมัครสมาชิก"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="@color/Black" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/regButton"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center" />
+
+</RelativeLayout>
