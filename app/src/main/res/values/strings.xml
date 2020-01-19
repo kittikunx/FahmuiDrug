@@ -1,3 +1,8 @@
 <resources>
-    <string name="app_name">FahmuiDrug</string>
+    <string name="app_name">โอสถ</string>
+    <string-array name="lab_selected">
+        <item>กรุณาเลือกผลตรวจที่ท่านต้องการ</item>
+        <item>CD4</item>
+        <item>Viral Load</item>
+    </string-array>
 </resources>

@@ -1,0 +1,913 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".HospitalActivity"
+    android:background="@drawable/back">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:weightSum="21"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:background="@color/green"
+                android:text="โรงพยาบาล"
+                android:textAlignment="center"
+                android:textColor="@android:color/white"
+                android:textSize="28sp"
+                android:textStyle="bold"
+                android:paddingTop="5dp" />
+
+            <ImageButton
+                android:id="@+id/imageButton"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="false"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="2dp"
+                android:background="@drawable/arrow"/>
+        </RelativeLayout>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            app:cardBackgroundColor="@color/cardview_light_background"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="8dp"
+            android:layout_marginTop="16dp">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/textA1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp"
+                    android:text="โรงพยาบาลพะเยา"
+                    android:textStyle="bold"
+                    android:paddingTop="10dp"/>
+
+                <TextView
+                    android:id="@+id/textB1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textA1"
+                    android:paddingStart="10dp"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp"
+                    android:text="ที่อยู่ : 269  ถนนพหลโยธิน  ตำบลบ้านต๋อม  อำเภอเมืองพะเยา  จังหวัดพะเยา  56000"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textB1"
+                    android:padding="10dp"
+
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp"
+                    android:text="เบอร์โทรศัพท์ : 054-409300 "/>
+
+
+            </RelativeLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            app:cardBackgroundColor="@color/cardview_light_background"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="8dp"
+            android:layout_marginTop="16dp">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/textA2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp"
+                    android:text="โรงพยาบาลพะเยาราม"
+                    android:textStyle="bold"
+                    android:paddingTop="10dp"/>
+
+                <TextView
+                    android:id="@+id/textB2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textA2"
+                    android:paddingStart="10dp"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp"
+                    android:text="ที่อยู่ : 660  ตำบลท่าวังทอง  อำเภอเมืองพะเยา  จังหวัดพะเยา  56000"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textB2"
+                    android:padding="10dp"
+
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp"
+                    android:text="เบอร์โทรศัพท์ : 054-411111 "/>
+
+
+            </RelativeLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            app:cardBackgroundColor="@color/cardview_light_background"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="8dp"
+            android:layout_marginTop="16dp">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/textA3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp"
+                    android:text="โรงพยาบาลแม่ใจ"
+                    android:textStyle="bold"
+                    android:paddingTop="10dp"/>
+
+                <TextView
+                    android:id="@+id/textB3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textA3"
+                    android:paddingStart="10dp"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp"
+                    android:text="ที่อยู่ : 80 หมู่ 9  ตำบลศรีถ้อย  อำเภอแม่ใจ  จังหวัดพะเยา  56130"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textB3"
+                    android:padding="10dp"
+
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp"
+                    android:text="เบอร์โทรศัพท์ : 054-409600 "/>
+
+
+            </RelativeLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            app:cardBackgroundColor="@color/cardview_light_background"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="8dp"
+            android:layout_marginTop="16dp">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/textA4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp"
+                    android:text="โรงพยาบาลปง"
+                    android:textStyle="bold"
+                    android:paddingTop="10dp"/>
+
+                <TextView
+                    android:id="@+id/textB4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textA4"
+                    android:paddingStart="10dp"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp"
+                    android:text="ที่อยู่ : 395 หมู่ 9  ตำบลนาปรัง  อำเภอปง  จังหวัดพะเยา  56140"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textB4"
+                    android:padding="10dp"
+
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp"
+                    android:text="เบอร์โทรศัพท์ : 054-497225 , 054-497030 "/>
+
+
+            </RelativeLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            app:cardBackgroundColor="@color/cardview_light_background"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="8dp"
+            android:layout_marginTop="16dp">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/textA5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp"
+                    android:text="โรงพยาบาลจุน"
+                    android:textStyle="bold"
+                    android:paddingTop="10dp"/>
+
+                <TextView
+                    android:id="@+id/textB5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textA5"
+                    android:paddingStart="10dp"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp"
+                    android:text="ที่อยู่ : 7 หมู่ 7  ตำบลห้วยข้าวก่ำ  อำเภอจุน  จังหวัดพะเยา  56130"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textB5"
+                    android:padding="10dp"
+
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp"
+                    android:text="เบอร์โทรศัพท์ : 054-409200 "/>
+
+
+            </RelativeLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            app:cardBackgroundColor="@color/cardview_light_background"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="8dp"
+            android:layout_marginTop="16dp">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/textA6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp"
+                    android:text="โรงพยาบาลดอกคำใต้"
+                    android:textStyle="bold"
+                    android:paddingTop="10dp"/>
+
+                <TextView
+                    android:id="@+id/textB6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textA6"
+                    android:paddingStart="10dp"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp"
+                    android:text="ที่อยู่ : 225 หมู่ 4  ตำบลดอนศรีชุม  อำเภอดอกคำใต้  จังหวัดพะเยา  56130"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textB6"
+                    android:padding="10dp"
+
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp"
+                    android:text="เบอร์โทรศัพท์ : 054-409500 "/>
+
+
+            </RelativeLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            app:cardBackgroundColor="@color/cardview_light_background"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="8dp"
+            android:layout_marginTop="16dp">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/textA7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp"
+                    android:text="โรงพยาบาลเชียงคำ"
+                    android:textStyle="bold"
+                    android:paddingTop="10dp"/>
+
+                <TextView
+                    android:id="@+id/textB7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textA7"
+                    android:paddingStart="10dp"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp"
+                    android:text="ที่อยู่ : 244 หมู่ 4  ถนนประชาราษฎร์  ตำบลหย่วน  อำเภอเชียงคำ  จังหวัดพะเยา  56110"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textB7"
+                    android:padding="10dp"
+
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp"
+                    android:text="เบอร์โทรศัพท์ : 054-409000 "/>
+
+
+            </RelativeLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            app:cardBackgroundColor="@color/cardview_light_background"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="8dp"
+            android:layout_marginTop="16dp">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/textA8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp"
+                    android:text="โรงพยาบาลค่ายขุนเจืองธรรมิกราช"
+                    android:textStyle="bold"
+                    android:paddingTop="10dp"/>
+
+                <TextView
+                    android:id="@+id/textB8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textA8"
+                    android:paddingStart="10dp"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp"
+                    android:text="ที่อยู่ :200  หมู่ 2  ตำบลท่าวังทอง  อำเภอเมืองพะเยา  จังหวัดพะเยา  56000"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textB8"
+                    android:padding="10dp"
+
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp"
+                    android:text="เบอร์โทรศัพท์ : 054-482778 "/>
+
+
+            </RelativeLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            app:cardBackgroundColor="@color/cardview_light_background"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="8dp"
+            android:layout_marginTop="16dp">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/textA9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp"
+                    android:text="โรงพยาบาลเชียงม่วน"
+                    android:textStyle="bold"
+                    android:paddingTop="10dp"/>
+
+                <TextView
+                    android:id="@+id/textB9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textA9"
+                    android:paddingStart="10dp"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp"
+                    android:text="ที่อยู่ : 200  หมู่ 6  ตำบลเชียงม่วน  อำเภอเชียงม่วน  จังหวัดพะเยา  56160"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textB9"
+                    android:padding="10dp"
+
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp"
+                    android:text="เบอร์โทรศัพท์ : 054-495018 "/>
+
+
+            </RelativeLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            app:cardBackgroundColor="@color/cardview_light_background"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="8dp"
+            android:layout_marginTop="16dp">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/textA10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp"
+                    android:text="ศูนย์การแพทย์และโรงพยาบาลมหาวิทยาลัยพะเยา"
+                    android:textStyle="bold"
+                    android:paddingTop="10dp"/>
+
+                <TextView
+                    android:id="@+id/textB10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textA10"
+                    android:paddingStart="10dp"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp"
+                    android:text="ที่อยู่ : 19/1 หมู่ 2  ตำบลแม่กา  อำเภอเมืองพะเยา  จังหวัดพะเยา  56000"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textB10"
+                    android:padding="10dp"
+
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp"
+                    android:text="เบอร์โทรศัพท์ : 054-466758 "/>
+
+
+            </RelativeLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            app:cardBackgroundColor="@color/cardview_light_background"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="8dp"
+            android:layout_marginTop="16dp">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/textA11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp"
+                    android:text="โรงพยาบาลแพร่"
+                    android:textStyle="bold"
+                    android:paddingTop="10dp"/>
+
+                <TextView
+                    android:id="@+id/textB11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textA11"
+                    android:paddingStart="10dp"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp"
+                    android:text="ที่อยู่ : 144 ถนนช่อแฮ  ตำบอลในเวียง  อำเภอเมือง  จังหวัดแพร่  54000"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textB11"
+                    android:padding="10dp"
+
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp"
+                    android:text="เบอร์โทรศัพท์ : 054-533500 "/>
+
+
+            </RelativeLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            app:cardBackgroundColor="@color/cardview_light_background"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="8dp"
+            android:layout_marginTop="16dp">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/textA12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp"
+                    android:text="โรงพยาบาลลำปาง"
+                    android:textStyle="bold"
+                    android:paddingTop="10dp"/>
+
+                <TextView
+                    android:id="@+id/textB12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textA12"
+                    android:paddingStart="10dp"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp"
+                    android:text="ที่อยู่ : 280  ถนนพหลโยธิน  ตำบลหัวเวียง  อำเภอเเมือ  จังหวัดลำปาง  52100"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textB12"
+                    android:padding="10dp"
+
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp"
+                    android:text="เบอร์โทรศัพท์ : 054-237400 "/>
+
+
+            </RelativeLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            app:cardBackgroundColor="@color/cardview_light_background"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="8dp"
+            android:layout_marginTop="16dp">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/textA13"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp"
+                    android:text="โรงพยาบาลเชียงรายประชานุเคราะห์"
+                    android:textStyle="bold"
+                    android:paddingTop="10dp"/>
+
+                <TextView
+                    android:id="@+id/textB13"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textA13"
+                    android:paddingStart="10dp"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp"
+                    android:text="ที่อยู่ : 1039 ถนนสถานพยาบาล  ตำบลเวียง  อำเภอเเมืองเชียงราย  จังหวัดเชียงราย  57000"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textB13"
+                    android:padding="10dp"
+
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp"
+                    android:text="เบอร์โทรศัพท์ : 053-910600 , 053-711009 "/>
+
+
+            </RelativeLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            app:cardBackgroundColor="@color/cardview_light_background"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="8dp"
+            android:layout_marginTop="16dp">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/textA14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp"
+                    android:text="โรงพยาบาลพุทธชินราช พิษณุโลก"
+                    android:textStyle="bold"
+                    android:paddingTop="10dp"/>
+
+                <TextView
+                    android:id="@+id/textB14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textA14"
+                    android:paddingStart="10dp"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp"
+                    android:text="ที่อยู่ : 90 ถนนศรีธรรมไตรปิฏก  ตำบลในเมือง  อำเภอเมือง  จังหวัดพิษณุโลก  65000"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textB14"
+                    android:padding="10dp"
+
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp"
+                    android:text="เบอร์โทรศัพท์ : 055-270300 "/>
+
+
+            </RelativeLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            app:cardBackgroundColor="@color/cardview_light_background"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="8dp"
+            android:layout_marginTop="16dp">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/textA15"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp"
+                    android:text="โรงพยาบาลพาน"
+                    android:textStyle="bold"
+                    android:paddingTop="10dp"/>
+
+                <TextView
+                    android:id="@+id/textB15"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textA15"
+                    android:paddingStart="10dp"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp"
+                    android:text="ที่อยู่ : 516 หมู่ 1  ตำบลม่วงคำ  อำเภอพาน  จังหวัดเชียงราย  57120"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textB15"
+                    android:padding="10dp"
+
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp"
+                    android:text="เบอร์โทรศัพท์ : 053-721345 "/>
+
+
+            </RelativeLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            app:cardBackgroundColor="@color/cardview_light_background"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="8dp"
+            android:layout_marginTop="16dp">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/textA16"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp"
+                    android:text="โรงพยาบาลภูซาง"
+                    android:textStyle="bold"
+                    android:paddingTop="10dp"/>
+
+                <TextView
+                    android:id="@+id/textB16"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textA16"
+                    android:paddingStart="10dp"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp"
+                    android:text="ที่อยู่ : ตำบลป่าสัก  อำเภอภูซาง  จังหวัดพะเยา  56110"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textB16"
+                    android:padding="10dp"
+
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp"
+                    android:text="เบอร์โทรศัพท์ : 054-465100 "/>
+
+
+            </RelativeLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            app:cardBackgroundColor="@color/cardview_light_background"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="8dp"
+            android:layout_marginTop="16dp">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/textA17"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp"
+                    android:text="โรงพยาบาลภูกามยาว"
+                    android:textStyle="bold"
+                    android:paddingTop="10dp"/>
+
+                <TextView
+                    android:id="@+id/textB17"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textA17"
+                    android:paddingStart="10dp"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp"
+                    android:text="ที่อยู่ : ตำบลห้วยแก้ว  อำเภอภูกามยาว  จังหวัดพะเยา  56000"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textB17"
+                    android:padding="10dp"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp"
+                    android:text="เบอร์โทรศัพท์ : 054-079801 "/>
+
+
+            </RelativeLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+
+    </LinearLayout>
+
+
+
+</ScrollView>

@@ -9,6 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+
         <activity android:name=".LoginActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -16,7 +17,15 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".MainActivity" />
+        <activity android:name=".LabTestActivity" />
+        <activity android:name=".DrugActivity" />
+        <activity android:name=".MenuActivity" />
+        <activity android:name=".view.DrugView" />
+        <activity android:name=".HospitalActivity" />
+        <activity android:name=".DeveloperActivity" />
+        <activity android:name=".KnowledgeActivity" />
+        <activity android:name=".QuestionActivity" />
+        <activity android:name=".VideoActivity" />
     </application>
 
 </manifest>

@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:weightSum="21"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:background="@color/green"
+                android:text="เกี่ยวกับเรา"
+                android:textAlignment="center"
+                android:textColor="@android:color/white"
+                android:textSize="28sp"
+                android:textStyle="bold"
+                android:paddingTop="5dp" />
+
+            <ImageButton
+                android:id="@+id/imageButton"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="false"
+                android:layout_marginStart="4dp"
+                android:layout_marginLeft="4dp"
+                android:layout_marginTop="2dp"
+                android:background="@drawable/arrow"/>
+        </RelativeLayout>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            app:cardBackgroundColor="@color/cardview_light_background"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="8dp"
+            android:layout_marginTop="20dp">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/text1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="10dp"
+                    android:paddingStart="10dp"
+                    android:textSize="16sp"
+                    android:textColor="@android:color/black"
+                    android:text="   แอปพลิเคชันนี้ ได้รับการพัฒนาโดยนิสิตและคณาจารย์คณะเภสัชศาสตร์ มหาวิทยาลัยพะเยา เพื่อส่งเสริมความร่วมมือในการใช้ยาของผู้ติดเชื้อเอชไอวีให้ดียิ่งขึ้น"/>
+
+                <TextView
+                    android:id="@+id/text2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:textSize="16sp"
+                    android:textColor="@android:color/black"
+                    android:layout_below="@+id/text1"
+                    android:text="   ผู้พัฒนาขอขอบพระคุณเแพทย์ และเภสัชการโรงพยาบาลพะเยา โรงพยาบาลแพร่ และโรงพยาบาลพุทธชินราช พิษณุโลก ผู้ที่กรุณาให้ข้อมูลสำหรับการพัฒนาแอปพลิเคชัน และขอบพระคุณอาจารย์มหาวิทยาลัย
+เชียงใหม่ และมหาวิทยาลัยนเรศวร ที่กรุณาให้ข้อมูลในการพัฒนาแอปพลิเคชันนี้"/>
+
+                <TextView
+                    android:id="@+id/text3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="10dp"
+                    android:paddingStart="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingEnd="10dp"
+                    android:textSize="16sp"
+                    android:textColor="@android:color/black"
+                    android:layout_below="@+id/text2"
+                    android:text="รายชื่อผู้ร่วมพัฒนาแอปพลิเคชัน"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/text4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/text3"
+                    android:paddingLeft="15dp"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp"
+                    android:text="1. ดร.ภญ.ปวีสา ชวลิตพงศ์พันธุ์"/>
+
+                <TextView
+                    android:id="@+id/text5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/text4"
+                    android:paddingLeft="15dp"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp"
+                    android:text="2. ภก.พิสิษฐ์ หรือสมบูรณ์"/>
+
+                <TextView
+                    android:id="@+id/text6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/text5"
+                    android:paddingLeft="15dp"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp"
+                    android:text="3. นสภ.ณัชรัตน์ สีสุวรรณ์"/>
+
+                <TextView
+                    android:id="@+id/text7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/text6"
+                    android:paddingLeft="15dp"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp"
+                    android:text="4. นสภ.ธัชฎานันธ์ จันต๊ะวงศ์"/>
+
+                <TextView
+                    android:id="@+id/text8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/text7"
+                    android:paddingLeft="15dp"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp"
+                    android:text="5. นสภ.ณัฐสุดา จินดาศรี"
+                    android:paddingBottom="10dp"/>
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            app:cardBackgroundColor="@color/cardview_light_background"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="8dp"
+            android:layout_marginTop="10dp">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/text9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="10dp"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp"
+                    android:text="ติดต่อเรา"
+                    android:textStyle="bold"
+                    android:paddingTop="10dp"/>
+
+                <TextView
+                    android:id="@+id/text10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/text9"
+                    android:paddingLeft="10dp"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp"
+                    android:text="   กรณีมีข้อสงสัยหรือต้องการสอบถามเพิ่มเติม สามารถติดต่อได้ที่ ดร.ภญ.ปวีสา ชวลิตพงศ์พันธุ์ (ผู้พัฒนา)"/>
+
+                <TextView
+                    android:id="@+id/text11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/text10"
+                    android:paddingLeft="10dp"
+                    android:paddingStart="10dp"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp"
+                    android:text="เบอร์โทรศัพท์: 086-591-2124  "/>
+
+                <TextView
+                    android:id="@+id/text12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/text11"
+                    android:paddingLeft="10dp"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp"
+                    android:text="อีเมล: phaweesa_rx@hotmail.com "
+                    android:paddingStart="10dp"
+                    android:paddingBottom="10dp"/>
+
+            </RelativeLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+
+    </LinearLayout>
+
+
+
+</ScrollView>

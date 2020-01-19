@@ -3,4 +3,16 @@
     <color name="colorPrimary">#008577</color>
     <color name="colorPrimaryDark">#00574B</color>
     <color name="colorAccent">#D81B60</color>
+    <color name="fab_pressed">#FFF</color>
+    <color name="Black">#000</color>
+    <color name="orchid">#DA70D6</color>
+    <color name="green">#5fcc9c</color>
+    <color name="Lightgreen">#82e6af</color>
+    <color name="verylightgreen">#aaffc7</color>
+    <color name="darkgreen">#3c9788</color>
+    <color name="white">#FFFF</color>
+    <color name="gray">#808080</color>
+    <color name="lightgray">#fafafa</color>
+    <color name="yellow">#ffcc66</color>
+    <color name="yellow2">#ffbe00</color>
 </resources>

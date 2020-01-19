@@ -1,0 +1,308 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:weightSum="21"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:background="@color/green"
+                android:text="สาระน่ารู้"
+                android:textAlignment="center"
+                android:textColor="@android:color/white"
+                android:textSize="28sp"
+                android:textStyle="bold"
+                android:paddingTop="5dp" />
+
+            <ImageButton
+                android:id="@+id/imageButton"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="false"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="2dp"
+                android:background="@drawable/arrow"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardBackgroundColor="@color/cardview_light_background"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="8dp"
+                android:layout_marginTop="20dp">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/image1"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:background="@drawable/paper1"
+                        android:onClick="knowledge1"/>
+
+                    <TextView
+                        android:id="@+id/text1_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@id/image1"
+                        android:layout_toEndOf="@id/image1"
+                        android:paddingLeft="10dp"
+                        android:onClick="knowledge1"
+                        android:text="เก็บยาอย่างไรให้คงสภาพ"
+                        android:textColor="@android:color/black"
+                        android:textSize="16sp"
+                        />
+
+                    <TextView
+                        android:id="@+id/text1_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@id/image1"
+                        android:layout_below="@id/text1_1"
+                        android:paddingLeft="10dp"
+                        android:textColor="@color/gray"
+                        android:textSize="15sp"
+                        android:text="การเก็บรักษายามีผลต่อประสิทธิภาพในการรักษา"
+                        android:onClick="knowledge1" />
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardBackgroundColor="@color/cardview_light_background"
+                android:layout_below="@id/card1"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="8dp"
+                android:layout_marginTop="10dp">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/image2"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:background="@drawable/paper2"
+                        android:onClick="knowledge2"/>
+
+                    <TextView
+                        android:id="@+id/text2_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toEndOf="@id/image2"
+                        android:paddingStart="10dp"
+                        android:onClick="knowledge2"
+                        android:text="7 เคล็ดลับการใช้ถุงยางอนามัย"
+                        android:textColor="@android:color/black"
+                        android:textSize="16sp"
+                        />
+
+                    <TextView
+                        android:id="@+id/text2_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/text2_1"
+                        android:layout_toEndOf="@id/image2"
+                        android:paddingLeft="10dp"
+                        android:textColor="@color/gray"
+                        android:textSize="15sp"
+                        android:text="7 เคล็ดลับในการใช้ถุงยางอนามัยอย่างถูกวิธี"
+                        android:onClick="knowledge2"/>
+
+                </RelativeLayout>
+
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardBackgroundColor="@color/cardview_light_background"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_below="@id/card2"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="8dp"
+                android:layout_marginTop="10dp">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/image3"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:background="@drawable/paper3"
+                        android:onClick="knowledge3"/>
+
+                    <TextView
+                        android:id="@+id/text3_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toEndOf="@id/image3"
+                        android:paddingLeft="10dp"
+                        android:onClick="knowledge3"
+                        android:text="ใช้ยาอย่างเหมาะสมลดความเสี่ยงการเกิดพิษต่อตับ"
+                        android:textColor="@android:color/black"
+                        android:textSize="16sp"
+                        />
+
+                    <TextView
+                        android:id="@+id/text3_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toEndOf="@id/image3"
+                        android:layout_below="@id/text3_1"
+                        android:textColor="@color/gray"
+                        android:paddingStart="10dp"
+                        android:textSize="15sp"
+                        android:onClick="knowledge3"
+                        android:text="ีการป้องกันและการเฝ้าระวังโรคตับที่เกิดจากยา"/>
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardBackgroundColor="@color/cardview_light_background"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_below="@id/card3"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="8dp"
+                android:layout_marginTop="10dp">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/image4"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:background="@drawable/paper5"
+                        android:padding="2dp"
+                        android:onClick="knowledge4"/>
+
+                    <TextView
+                        android:id="@+id/text4_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@id/image4"
+                        android:layout_toEndOf="@id/image4"
+                        android:paddingLeft="10dp"
+                        android:onClick="knowledge4"
+                        android:text="อย.แนะใช้ผลิตภัณฑ์สมุนไพรด้วยความเข้าใจ"
+                        android:textColor="@android:color/black"
+                        android:textSize="16sp"
+                        />
+
+                    <TextView
+                        android:id="@+id/text4_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toEndOf="@id/image4"
+                        android:layout_below="@id/text4_1"
+                        android:textColor="@color/gray"
+                        android:paddingStart="10dp"
+                        android:textSize="15sp"
+                        android:onClick="knowledge4"
+                        android:text="ีใช้ผลิตภัณฑ์สมุนไพรจะต้องใช้ด้วยความเข้าใจ "/>
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card5"
+                app:cardBackgroundColor="@color/cardview_light_background"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_below="@id/card4"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="8dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="200dp">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/image5"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:background="@drawable/paper6"
+                        android:onClick="knowledge5" />
+
+                    <TextView
+                        android:id="@+id/text5_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toEndOf="@id/image5"
+                        android:paddingStart="10dp"
+                        android:onClick="knowledge5"
+                        android:text="ยาพร้อมแอลกอฮอล์ คือ มรณะ"
+                        android:textColor="@android:color/black"
+                        android:textSize="16sp"
+                        />
+
+                    <TextView
+                        android:id="@+id/text5_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toEndOf="@id/image5"
+                        android:layout_below="@id/text5_1"
+                        android:textColor="@color/gray"
+                        android:paddingStart="10dp"
+                        android:textSize="15sp"
+                        android:onClick="knowledge5"
+                        android:text="ีแนะนำกินยากับน้ำเปล่าดีที่สุด เพื่อประสิทธิภาพในการรักษา " />
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+</ScrollView>

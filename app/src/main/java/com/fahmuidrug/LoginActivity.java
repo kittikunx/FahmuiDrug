@@ -57,10 +57,14 @@ public class LoginActivity extends AppCompatActivity {
         loginPrefsEditor = loginPreferences.edit();
         saveLogin = loginPreferences.getBoolean("saveLogin", false);
 
-        if (saveLogin = true) {
+        if (saveLogin) {
             emailInput.setText(loginPreferences.getString("email", ""));
             passwordInput.setText(loginPreferences.getString("password", ""));
             rememberChk.setChecked(true);
+            email = emailInput.getText().toString();
+            password = passwordInput.getText().toString();
+            signIn(email,password);
+            return;
         }
 
         loginBtn.setOnClickListener(new View.OnClickListener() {
@@ -82,7 +86,13 @@ public class LoginActivity extends AppCompatActivity {
                     loginPrefsEditor.clear();
                     loginPrefsEditor.commit();
                 }
-                signIn(email,password);
+
+                if(!email.isEmpty()&&!password.isEmpty()){
+                    signIn(email,password);
+                }else{
+                    Toast.makeText(getApplicationContext(),"กรุณากรอกข้อมูลให้ครบ",Toast.LENGTH_LONG).show();
+                }
+
             }
         });
     }
@@ -98,10 +108,9 @@ public class LoginActivity extends AppCompatActivity {
                     logProgess.setVisibility(View.INVISIBLE);
                     loginBtn.setVisibility(View.VISIBLE);
                     regBtn.setVisibility(View.VISIBLE);
-                    doSomethingElse();
+                    goActivity();
                 }
                 else{
-
                     showMessage(Objects.requireNonNull(task.getException()).getMessage());
                     logProgess.setVisibility(View.INVISIBLE);
                     loginBtn.setVisibility(View.VISIBLE);
@@ -112,8 +121,8 @@ public class LoginActivity extends AppCompatActivity {
 
     }
 
-    public void doSomethingElse() {
-        startActivity(new Intent(LoginActivity.this, MainActivity.class));
+    private void goActivity() {
+        startActivity(new Intent(LoginActivity.this, MenuActivity.class));
         LoginActivity.this.finish();
     }
 
